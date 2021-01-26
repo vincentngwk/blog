@@ -32,5 +32,22 @@
     "preview": "posts/2021-01-26-my-first-post/my-first-post_files/figure-html5/unnamed-chunk-3-1.png",
     "last_modified": "2021-01-26T23:14:54+08:00",
     "input_file": "my-first-post.utf8.md"
+  },
+  {
+    "path": "posts/2021-01-26-my-2nd-post/",
+    "title": "My 2nd post",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Ng Wee Kien (Vincent)",
+        "url": "https://www.linkedin.com/in/ngweekiensg/"
+      }
+    ],
+    "date": "2021-01-26",
+    "categories": [],
+    "contents": "\r\n1.0 Section A\r\nCritic the graph from both its clarity and aesthetics. At least three from each evaluation criterion.\r\n2.0 Section B\r\nWith reference to the critics above, suggest alternative graphical presentation to improve the current design. The proposed alternative data visualisation must be in static form. Sketch out the proposed design. Support your design by describing the advantages or which part of the issue(s) your alternative design try to overcome.\r\n3.0 Section C\r\nUsing Tableau, design the proposed data visualization.\r\n4.0 Section D\r\nProvide step-by-step description on how the data visualization was prepared.\r\n5.0 Section E\r\nDescribe three major observations revealed by the data visualisation prepared.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-01-26T23:57:55+08:00",
+    "input_file": "my-2nd-post.utf8.md"
   }
 ]
