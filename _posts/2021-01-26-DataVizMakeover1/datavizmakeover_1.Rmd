@@ -1,7 +1,7 @@
 ---
 title: "DataViz Makeover 1"
 description: |
-  A short description of the post.
+  DataViz Makeover 1 provides a do-over for the given chart from the Ministry of Manpower on Singapore's resident labour force.
 author:
   - name: Ng Wee Kien (Vincent)
     url: https://www.linkedin.com/in/ngweekiensg/
@@ -19,14 +19,33 @@ knitr::opts_chunk$set(echo = FALSE)
 # 1.0 Section A
 Critic the graph from both its clarity and aesthetics.  At least three from each evaluation criterion.
 
+* Clarity:
+  + While the visualization provides the breakdown of age group in bins of 5 years, the lead-in verbiage mentions summary statistics using a different age bin.
+  + Statistics provided in the lead-in verbiage are hard for readers to match to what the graph shows. Readers are forced to do separate calculations and their own set of data binning (on the x-axis variable) to achieve those claims. For example, the claim of ‘share of residents aged 55 & over..’ requires the reader to manually sum up the values across 4 categories to validate that claim, and such a change in trend is also not clear from the line graph.
+  + Lack of Y-axis makes it harder to interpret line graph. Readers are forced to refer down to table at bottom to see the values.
 
+
+* Aesthetics:
+  + As the X-axis is of a categorical data type, a bar chart would be more appropriate. Whereas, the line chart will be more suited for a time-series form of comparison.
+  + X-axis labels could be placed on the tick marks to make it easier to read.
+  + Hard to relate to the underlying message of the differences in 'older' age group (55&over) vs 'middle' age group (25-54).
 
 
 # 2.0 Section B
 With reference to the critics above, suggest alternative graphical presentation to improve the current design.  The proposed alternative data visualisation must be in static form. Sketch out the proposed design.  Support your design by describing the advantages or which part of the issue(s) your alternative design try to overcome.
 
+
+
+
+
+
 # 3.0 Section C
 Using Tableau, design the proposed data visualization.
+
+![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-01-26-DataVizMakeover1/final_dashboard_ss.PNG)
+
+
+
 
 # 4.0 Section D
 Provide step-by-step description on how the data visualization was prepared.
