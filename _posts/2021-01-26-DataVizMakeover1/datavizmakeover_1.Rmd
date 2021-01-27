@@ -1,5 +1,5 @@
 ---
-title: "My 2nd post"
+title: "DataViz Makeover 1"
 description: |
   A short description of the post.
 author:
@@ -19,9 +19,11 @@ knitr::opts_chunk$set(echo = FALSE)
 # 1.0 Section A
 Critic the graph from both its clarity and aesthetics.  At least three from each evaluation criterion.
 
+
+
+
 # 2.0 Section B
-With reference to the critics above, suggest alternative graphical presentation to improve the current design.  The proposed alternative data visualisation must be in static form. Sketch out the proposed design.  Support your design by describing the advantages or which
-part of the issue(s) your alternative design try to overcome.
+With reference to the critics above, suggest alternative graphical presentation to improve the current design.  The proposed alternative data visualisation must be in static form. Sketch out the proposed design.  Support your design by describing the advantages or which part of the issue(s) your alternative design try to overcome.
 
 # 3.0 Section C
 Using Tableau, design the proposed data visualization.
