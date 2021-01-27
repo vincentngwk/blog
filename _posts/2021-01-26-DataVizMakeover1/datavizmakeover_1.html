@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["datavizmakeover_1_files/anchor-4.2.2/anchor.min.js","datavizmakeover_1_files/bowser-1.9.3/bowser.min.js","datavizmakeover_1_files/distill-2.2.21/template.v2.js","datavizmakeover_1_files/header-attrs-2.6/header-attrs.js","datavizmakeover_1_files/jquery-1.11.3/jquery.min.js","datavizmakeover_1_files/popper-2.6.0/popper.min.js","datavizmakeover_1_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover_1_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover_1_files/tippy-6.2.7/tippy.css","datavizmakeover_1_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover_1_files/webcomponents-2.0.0/webcomponents.js","final_dashboard_ss.PNG"]}
+  {"type":"character","attributes":{},"value":["datavizmakeover_1_files/anchor-4.2.2/anchor.min.js","datavizmakeover_1_files/bowser-1.9.3/bowser.min.js","datavizmakeover_1_files/distill-2.2.21/template.v2.js","datavizmakeover_1_files/header-attrs-2.6/header-attrs.js","datavizmakeover_1_files/jquery-1.11.3/jquery.min.js","datavizmakeover_1_files/popper-2.6.0/popper.min.js","datavizmakeover_1_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover_1_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover_1_files/tippy-6.2.7/tippy.css","datavizmakeover_1_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover_1_files/webcomponents-2.0.0/webcomponents.js","DVZM_1_sketch.jpg","final_dashboard_ss.PNG","Step1_Excel_DataPrep.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1495,15 +1495,93 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </ul>
 <h1 id="section-b">2.0 Section B</h1>
 <p>With reference to the critics above, suggest alternative graphical presentation to improve the current design. The proposed alternative data visualisation must be in static form. Sketch out the proposed design. Support your design by describing the advantages or which part of the issue(s) your alternative design try to overcome.</p>
+<figure>
+<img src="DVZM_1_sketch.jpg" alt="Initial Sketch" /><figcaption aria-hidden="true">Initial Sketch</figcaption>
+</figure>
+<ul>
+<li>Advantages:
+<ul>
+<li>By re-categorizing the age bins, it is easier to make sense of, and differentiate between the trends for the young/middle/old age groups. The usage of the icons further help make it clearer of the meaning of the various age groups.</li>
+<li>Both side-by-side bar charts share the same X-axis/panes, making the visualization look cleaner.</li>
+<li>In addition, bar charts are used instead of the original line graph. This makes it easier to compare such categorical data.</li>
+<li>Figures quoted in the lead-in paragraph can be found within the visualization itself, making it easier for the reader to follow the message.</li>
+<li>The Y-axis is clearly shown and labelled, with gridlines present. In addition, value labels are also present.</li>
+</ul></li>
+</ul>
 <h1 id="section-c">3.0 Section C</h1>
 <p>Using Tableau, design the proposed data visualization.</p>
+<p>The final dashboard can be accessed here: <a href="https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM1_submission/Dashboard1?publish=yes" class="uri">https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM1_submission/Dashboard1?publish=yes</a></p>
 <figure>
 <img src="final_dashboard_ss.PNG" alt="Final Tableau Dashboard" /><figcaption aria-hidden="true">Final Tableau Dashboard</figcaption>
 </figure>
 <h1 id="section-d">4.0 Section D</h1>
 <p>Provide step-by-step description on how the data visualization was prepared.</p>
+<ul>
+<li><p>Step 1: Preparing data in excel <img src="Step1_Excel_DataPrep.jpg" alt="Data Preparation in Excel" /></p>
+<ul>
+<li>3 new age bins were created from the given age bins of 5 years each. They are: ‘15-24’, ‘25-54’, and ‘55&amp;over’.</li>
+<li>Data from table 7 and table 5 in the MOM website was compiled into different columns within this same table.</li>
+<li>The values from table 7 were changed back to the full values, instead of being represented in thousands.</li>
+<li>The values from table 5 were changed into decimal numbers, instead of the percentage points given.</li>
+</ul></li>
+<li><p>Step 2: Excel data was imported into Tableau by dragging the excel workbook from file explorer into the Tableau user interface. The relevant tab within the excel workbook was selected. Default data types of text for Age Bins and numeric for the labour force figures were acceptable.</p></li>
+<li><p>Step 3: Creating the 1st chart (Share of Residents Labour Force)</p>
+<ul>
+<li>An age Heirarchy was created, with Age Bin (Years) being above Age (Years)</li>
+<li>The age Heirarchy was placed in Columns</li>
+<li>The measures “09 Total T7 K” and “19 Total T7 K” were placed in Rows</li>
+<li>In the top right, under ‘Show Me’, a side-by-side bar chart was chosen.</li>
+<li>View was changed to ‘Entire View’, from ‘Standard’.</li>
+<li>Title was changed to “Residents Labour Force by Age Bin”, bolded, and font size increased.</li>
+<li>Y-axis title was changed to “Share of Resident Labour Force (%)”</li>
+<li>Under ‘Analysis’ &gt; ‘Percentage Of’ &gt; ‘Table’</li>
+<li>Right click on Y-axis, Format, change Scale&gt;Numbers to Percentage with 0 decimal places.</li>
+<li>Right click on X-axis, uncheck ‘Show header’</li>
+<li>Right click on the various bars and select ‘Mark Label’ &gt; ‘Always Show’</li>
+<li>For both measures under the Measure Values pane, select the drop down list &gt; ‘Format’, and change Numbers formatting to Percentage with 0 decimal places.</li>
+<li>On the top right, legend aliases were edited to ‘2009/2019 Resident Labour Force’ respectively. Legend title was changed from ‘Measure Names’ to ‘Legend’</li>
+</ul></li>
+<li><p>Step 4: Creating the 2nd chart (Labour Force Participation Rate)</p>
+<ul>
+<li>An age Heirarchy was created, with Age Bin (Years) being above Age (Years)</li>
+<li>The age Heirarchy was placed in Columns</li>
+<li>The measures “09 Total T5 Pct” and “19 Total T5 Pct” were placed in Rows</li>
+<li>In the top right, under ‘Show Me’, a side-by-side bar chart was chosen.</li>
+<li>View was changed to ‘Entire View’, from ‘Standard’.</li>
+<li>Title was changed to “Labour Force Participation Rate”, bolded, and font size increased.</li>
+<li>Y-axis title was changed to “Labour Force Participation Rate (%)”</li>
+<li>Under Measure Values, for both measures, Measures were changed from Sum to Average.</li>
+<li>Right click on Y-axis, Format, change Scale&gt;Numbers to Percentage with 0 decimal places.</li>
+<li>Right click on X-axis, uncheck ‘Show header’</li>
+<li>Right click on the various bars and select ‘Mark Label’ &gt; ‘Always Show’</li>
+<li>For both measures under the Measure Values pane, select the drop down list &gt; ‘Format’, and change Numbers formatting to Percentage with 0 decimal places.</li>
+<li>On the top right, legend aliases were edited to ‘2009/2019 Resident Labour Force’ respectively. Legend title was changed from ‘Measure Names’ to ‘Legend’</li>
+<li>Right click the Y-axis &gt; ‘Edit Axis’ &gt; ‘Scale’ &gt; Check the ‘Reversed’ checkbox.</li>
+</ul></li>
+<li><p>Step 5: Creating the dashboard</p>
+<ul>
+<li>Drag the 1st sheet ‘% Share Labor Force Age Bin’ onto the dashboard</li>
+<li>Drag the 2nd sheet ‘LFPR’ onto the dashboard (below the 1st one)</li>
+<li>Add a text box at the top, fill in lead-in verbiage</li>
+<li>Right click on legend in the top right, and select ‘Floating’. Drag to correct position.</li>
+<li>Add 3 Image boxes between the 1st and the 2nd chart. Resize accordingly. Right click &gt; ‘Edit Image’ and select all 3 images respectively.</li>
+<li>Add a Blank on the left of the 1st image for padding.</li>
+<li>Add 2 text boxes at the bottom to provide references for images and data used</li>
+</ul></li>
+<li><p>Step 6: Save and Publish to Tableau Public server</p></li>
+</ul>
 <h1 id="section-e">5.0 Section E</h1>
 <p>Describe three major observations revealed by the data visualisation prepared.</p>
+<ul>
+<li>There is a decrease in the share of resident labour force for the middle age bin (25-54 years), even though the labour force participation rate for this category increased, comparing 2009 and 2019. This means that a greater proportion of those in this age group are working, however as the absolute number for this age group has decreased, it contributes to a smaller base for the entire population’s labour force as a whole.</li>
+<li>On the other hand, with the increase in numbers for the older age group (55&amp;over), the share of resident labour force for this category has increased. This was also due to more older people choosing to continue to work. (This may possibly be due to an increased retirement age, rising cost of living, or a whole host of other factors.)</li>
+<li>There was a slight decrease in the share of resident labour force for the youngest age group (15-24 years). This could be due to a few factors:
+<ul>
+<li>Lesser children per family (and the nation as a whole)</li>
+<li>Children are more well supported by their families, are able to have further education, and start work later</li>
+<li>Other factors</li>
+</ul></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

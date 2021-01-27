@@ -34,24 +34,89 @@ Critic the graph from both its clarity and aesthetics.  At least three from each
 # 2.0 Section B
 With reference to the critics above, suggest alternative graphical presentation to improve the current design.  The proposed alternative data visualisation must be in static form. Sketch out the proposed design.  Support your design by describing the advantages or which part of the issue(s) your alternative design try to overcome.
 
+![Initial Sketch](E:/vincentngwk/blog/_posts/2021-01-26-DataVizMakeover1/DVZM_1_sketch.jpg)
 
-
-
+* Advantages:
+  + By re-categorizing the age bins, it is easier to make sense of, and differentiate between the trends for the young/middle/old age groups. The usage of the icons further help make it clearer of the meaning of the various age groups.
+  + Both side-by-side bar charts share the same X-axis/panes, making the visualization look cleaner.
+  + In addition, bar charts are used instead of the original line graph. This makes it easier to compare such categorical data.
+  + Figures quoted in the lead-in paragraph can be found within the visualization itself, making it easier for the reader to follow the message.
+  + The Y-axis is clearly shown and labelled, with gridlines present. In addition, value labels are also present.
 
 
 # 3.0 Section C
 Using Tableau, design the proposed data visualization.
 
-![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-01-26-DataVizMakeover1/final_dashboard_ss.PNG)
+The final dashboard can be accessed here: https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM1_submission/Dashboard1?publish=yes
 
+![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-01-26-DataVizMakeover1/final_dashboard_ss.PNG)
 
 
 
 # 4.0 Section D
 Provide step-by-step description on how the data visualization was prepared.
 
+* Step 1: Preparing data in excel
+![Data Preparation in Excel](E:/vincentngwk/blog/_posts/2021-01-26-DataVizMakeover1/Step1_Excel_DataPrep.jpg)
+  + 3 new age bins were created from the given age bins of 5 years each. They are: '15-24', '25-54', and '55&over'.
+  + Data from table 7 and table 5 in the MOM website was compiled into different columns within this same table.
+  + The values from table 7 were changed back to the full values, instead of being represented in thousands.
+  + The values from table 5 were changed into decimal numbers, instead of the percentage points given.
+
+* Step 2: Excel data was imported into Tableau by dragging the excel workbook from file explorer into the Tableau user interface. The relevant tab within the excel workbook was selected. Default data types of text for Age Bins and numeric for the labour force figures were acceptable.
+
+* Step 3: Creating the 1st chart (Share of Residents Labour Force)
+  + An age Heirarchy was created, with Age Bin (Years) being above Age (Years)
+  + The age Heirarchy was placed in Columns
+  + The measures "09 Total T7 K" and "19 Total T7 K" were placed in Rows
+  + In the top right, under 'Show Me', a side-by-side bar chart was chosen.
+  + View was changed to 'Entire View', from 'Standard'.
+  + Title was changed to "Residents Labour Force by Age Bin", bolded, and font size increased.
+  + Y-axis title was changed to "Share of Resident Labour Force (%)"
+  + Under 'Analysis' > 'Percentage Of' > 'Table'
+  + Right click on Y-axis, Format, change Scale>Numbers to Percentage with 0 decimal places.
+  + Right click on X-axis, uncheck 'Show header'
+  + Right click on the various bars and select 'Mark Label' > 'Always Show'
+  + For both measures under the Measure Values pane, select the drop down list > 'Format', and change Numbers formatting to Percentage with 0 decimal places.
+  + On the top right, legend aliases were edited to '2009/2019 Resident Labour Force' respectively. Legend title was changed from 'Measure Names' to 'Legend'
+
+* Step 4: Creating the 2nd chart (Labour Force Participation Rate)
+  + An age Heirarchy was created, with Age Bin (Years) being above Age (Years)
+  + The age Heirarchy was placed in Columns
+  + The measures "09 Total T5 Pct" and "19 Total T5 Pct" were placed in Rows
+  + In the top right, under 'Show Me', a side-by-side bar chart was chosen.
+  + View was changed to 'Entire View', from 'Standard'.
+  + Title was changed to "Labour Force Participation Rate", bolded, and font size increased.
+  + Y-axis title was changed to "Labour Force Participation Rate (%)"
+  + Under Measure Values, for both measures, Measures were changed from Sum to Average.
+  + Right click on Y-axis, Format, change Scale>Numbers to Percentage with 0 decimal places.
+  + Right click on X-axis, uncheck 'Show header'
+  + Right click on the various bars and select 'Mark Label' > 'Always Show'
+  + For both measures under the Measure Values pane, select the drop down list > 'Format', and change Numbers formatting to Percentage with 0 decimal places.
+  + On the top right, legend aliases were edited to '2009/2019 Resident Labour Force' respectively. Legend title was changed from 'Measure Names' to 'Legend'
+  + Right click the Y-axis > 'Edit Axis' > 'Scale' > Check the 'Reversed' checkbox.
+
+* Step 5: Creating the dashboard
+  + Drag the 1st sheet '% Share Labor Force Age Bin' onto the dashboard
+  + Drag the 2nd sheet 'LFPR' onto the dashboard (below the 1st one)
+  + Add a text box at the top, fill in lead-in verbiage
+  + Right click on legend in the top right, and select 'Floating'. Drag to correct position.
+  + Add 3 Image boxes between the 1st and the 2nd chart. Resize accordingly. Right click > 'Edit Image' and select all 3 images respectively.
+  + Add a Blank on the left of the 1st image for padding.
+  + Add 2 text boxes at the bottom to provide references for images and data used
+
+* Step 6: Save and Publish to Tableau Public server
+
+
 # 5.0 Section E
 Describe three major observations revealed by the data visualisation prepared.
+
+* There is a decrease in the share of resident labour force for the middle age bin (25-54 years), even though the labour force participation rate for this category increased, comparing 2009 and 2019. This means that a greater proportion of those in this age group are working, however as the absolute number for this age group has decreased, it contributes to a smaller base for the entire population's labour force as a whole.
+* On the other hand, with the increase in numbers for the older age group (55&over), the share of resident labour force for this category has increased. This was also due to more older people choosing to continue to work. (This may possibly be due to an increased retirement age, rising cost of living, or a whole host of other factors.)
+* There was a slight decrease in the share of resident labour force for the youngest age group (15-24 years). This could be due to a few factors:
+  + Lesser children per family (and the nation as a whole)
+  + Children are more well supported by their families, are able to have further education, and start work later
+  + Other factors
 
 
 
