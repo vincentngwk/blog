@@ -1,7 +1,7 @@
 name: "blog"
-title: "IDEA"
+title: "Vincent's Visual Analytics Portfolio"
 description: |
-  IDEA
+  New IDEAs all the time!
 output_dir: "_site"
 navbar:
   right:
