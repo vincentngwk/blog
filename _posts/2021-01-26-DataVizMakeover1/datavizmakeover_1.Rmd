@@ -19,6 +19,9 @@ knitr::opts_chunk$set(echo = FALSE)
 # 1.0 Section A
 Critic the graph from both its clarity and aesthetics.  At least three from each evaluation criterion.
 
+![Initial Chart](E:/vincentngwk/blog/_posts/2021-01-26-DataVizMakeover1/orig_chart_ss.JPG)
+
+
 * Clarity:
   + While the visualization provides the breakdown of age group in bins of 5 years, the lead-in verbiage mentions summary statistics using a different age bin.
   + Statistics provided in the lead-in verbiage are hard for readers to match to what the graph shows. Readers are forced to do separate calculations and their own set of data binning (on the x-axis variable) to achieve those claims. For example, the claim of ‘share of residents aged 55 & over..’ requires the reader to manually sum up the values across 4 categories to validate that claim, and such a change in trend is also not clear from the line graph.
