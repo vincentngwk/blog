@@ -1,0 +1,61 @@
+---
+title: "DataViz Makeover 2"
+description: |
+  DataViz Makeover 2 provides a do-over for the given charts from a research team working on Covid-19 vaccine responses data.
+author:
+  - name: Ng Wee Kien (Vincent)
+    url: https://www.linkedin.com/in/ngweekiensg/
+date: 02-15-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# 1.0 Section A
+Critic the graph from both its clarity and aesthetics.  At least three from each evaluation criterion.
+
+
+
+* Clarity:
+
+
+
+* Aesthetics:
+
+
+
+# 2.0 Section B
+
+
+* Advantages:
+
+
+
+# 3.0 Section C
+Using Tableau, design the proposed data visualization.
+
+The final dashboard can be accessed here: 
+TO ADD TABLEAU PUBLIC LINK HERE!
+
+# 4.0 Section D
+Provide step-by-step description on how the data visualization was prepared.
+
+*Part 1: Bringing the data in
+  + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file ("australia.csv") into Tableau. Select the New Union function to import the chosen countries data using a manual connection.
+![Importing data and performing a Union](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/1_import_data_union.JPG)
+
+  + Select all the columns that we do not want to use, right-click, and select Hide
+![Removing unnecessary columns](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/2_hide_data_columns.jpg)
+
+# 5.0 Section E
+Describe three major observations revealed by the data visualisation prepared.
+
+
+
+

@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-02-15-dataviz-makeover-2/",
+    "title": "DataViz Makeover 2",
+    "description": "DataViz Makeover 2 provides a do-over for the given charts from a research team working on Covid-19 vaccine responses data.",
+    "author": [
+      {
+        "name": "Ng Wee Kien (Vincent)",
+        "url": "https://www.linkedin.com/in/ngweekiensg/"
+      }
+    ],
+    "date": "2021-02-15",
+    "categories": [],
+    "contents": "\r\n1.0 Section A\r\nCritic the graph from both its clarity and aesthetics. At least three from each evaluation criterion.\r\nClarity:\r\nAesthetics:\r\n2.0 Section B\r\nAdvantages:\r\n3.0 Section C\r\nUsing Tableau, design the proposed data visualization.\r\nThe final dashboard can be accessed here: TO ADD TABLEAU PUBLIC LINK HERE!\r\n4.0 Section D\r\nProvide step-by-step description on how the data visualization was prepared.\r\n*Part 1: Bringing the data in + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file (“australia.csv”) into Tableau. Select the New Union function to import the chosen countries data using a manual connection. \r\nSelect all the columns that we do not want to use, right-click, and select Hide \r\n5.0 Section E\r\nDescribe three major observations revealed by the data visualisation prepared.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-02-17T23:48:41+08:00",
+    "input_file": "dataviz-makeover-2.utf8.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to IDEA",
     "description": "Welcome to our new blog, IDEA. We hope you enjoy \nreading what we have to say!",
