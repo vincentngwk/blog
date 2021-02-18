@@ -52,7 +52,12 @@ These are the original data visualizations created by the research team conducti
 
 # 2.0 Section B
 
-Drawing goes here.
+<center>
+
+![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/DVZM2_drawing.jpg)
+
+</center>
+
 
 * Advantages:
   + A likert chart is created to provide a comparison where Negative sentiments are clearly on the left, and Positive sentiments are clearly on the right.
