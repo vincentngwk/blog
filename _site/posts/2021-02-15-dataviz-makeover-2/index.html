@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","countnegative.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","likert_cols_rows.jpg","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_markto_ganttbar.jpg","likert_percentage.jpg","parameter_surverytext.jpg","remapped_scores_overview.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg","vac1_score.jpg"]}
+  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","CI_keep_only2measurenames.jpg","CI_measurevalues_upper_axis.jpg","CI_prop.jpg","CI_stronglyagreesinglecount.jpg","countnegative.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","likert_cols_rows.jpg","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_markto_ganttbar.jpg","likert_percentage.jpg","likert_sort_country_prop.jpg","parameter_surverytext.jpg","remapped_scores_overview.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg","vac1_score.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2145,6 +2145,23 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p>Change format of Percentage field to 1 decimal point <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_percentagefield_1dp.jpg" alt="Change format of Percentage field percentage" /></p></li>
 <li><p>Change title of X axis to “Survey Responses as Proportion of Total Responses”</p></li>
 <li><p>Change Label settings to align to middle and make font size smaller <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_change_label_format.jpg" alt="Change format of Label settings" /></p></li>
+</ul>
+<p>*Part 3: Creating Confidence Interval Error Bar charts</p>
+<ul>
+<li><p>Create a calculated field for Strongly Agree Single Count. We are creating counts for responses with “Strongly Agree”. CI_stronglyagreesinglecount.jpg</p></li>
+<li><p>Create a calculated field for Prop. We want to find out the proportion of responses which gave “Strongly Agree”. CI_prop.jpg</p></li>
+<li><p>Go back to the Likert chart, and sort Country (rows) by Prop under Field. This allows us to sort in descending order for countries with highest to lowest proportions of responses with “Strongly Agree”. likert_sort_country_prop.jpg</p></li>
+<li><p>Create calculated field for Prop SE</p></li>
+<li><p>Create calculated field for Z_95%</p></li>
+<li><p>Create calculated field for Prop_Margin of Error 95%</p></li>
+<li><p>Create calculated field for Prop_Lower Limit 95%</p></li>
+<li><p>Create calculated field for Prop_Upper Limit 95%</p></li>
+<li><p>Move Country to Rows, Prop to Columns</p></li>
+<li><p>Change Mark for Props from Automatic (line) to Circle</p></li>
+<li><p>Move Measure Values to upper secondary horizontal axis CI_measurevalues_upper_axis.jpg</p></li>
+<li><p>Edit the filter for Measure Names, and keep only 2 measures: Prop_Lower Limit 95% and Prop_Upper Limit 95%. CI_keep_only2measurenames.jpg</p></li>
+<li><p>Move Selected to Filters, and uncheck ‘Null’ values.</p></li>
+<li></li>
 </ul>
 <h1 id="section-e">5.0 Section E</h1>
 <p>Describe three major observations revealed by the data visualization prepared.</p>

@@ -129,6 +129,48 @@ Provide step-by-step description on how the data visualization was prepared.
 
 
 
+*Part 3: Creating Confidence Interval Error Bar charts
+
+  + Create a calculated field for Strongly Agree Single Count. We are creating counts for responses with "Strongly Agree".
+CI_stronglyagreesinglecount.jpg
+
+  + Create a calculated field for Prop. We want to find out the proportion of responses which gave "Strongly Agree".
+CI_prop.jpg
+
+  + Go back to the Likert chart, and sort Country (rows) by Prop under Field. This allows us to sort in descending order for countries with highest to lowest proportions of responses with "Strongly Agree".
+likert_sort_country_prop.jpg
+
+  + Create calculated field for Prop SE
+
+  + Create calculated field for Z_95%
+
+  + Create calculated field for Prop_Margin of Error 95%
+
+  + Create calculated field for Prop_Lower Limit 95%
+
+  + Create calculated field for Prop_Upper Limit 95%
+
+  + Move Country to Rows, Prop to Columns
+  
+  + Change Mark for Props from Automatic (line) to Circle
+  
+  + Move Measure Values to upper secondary horizontal axis
+CI_measurevalues_upper_axis.jpg
+
+  + Edit the filter for Measure Names, and keep only 2 measures: Prop_Lower Limit 95% and Prop_Upper Limit 95%.
+CI_keep_only2measurenames.jpg
+
+  + Move Selected to Filters, and uncheck 'Null' values.
+
+  + 
+
+
+
+
+
+
+
+
 
 
 
