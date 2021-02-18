@@ -162,10 +162,32 @@ CI_keep_only2measurenames.jpg
 
   + Move Selected to Filters, and uncheck 'Null' values.
 
+  + Change Measure Values from Circle to Line. Press Ctrl+Click and drag measure values to Path and repeat the same to Colour.
+CI_measurenames_duplicate.jpg
+
+  + Right click on the X axis with a smaller range of values, and select Synchronize axis
+CI_synchronize_axis.jpg
+
+  + Under AGG(Prop) mark, change Measure Names from Detail to Colour.
+
+  + Change colors of Measure Names (on right side) as required
+CI_change_measurename_colors.jpg
+
+  + Under columns, change the order of Measure Values and AGG(Prop). This allows AGG(Prop) Circle to appear 'in front of' Measure Values Line.
+
+  + Change the format of both X-axis to percentage, with 0 decimal points.
+
+  + Change the view from Standard to Entire View
+  
+  + Under Rows, Country, Sort by Field > Prop in descending manner. (similar to the Likert Chart)
+
+  + Turn on Animations, and change settings as desired.
+CI_animationsettings.jpg
+
+  + Right click on the upper horizontal axis, and uncheck Show Header.
+CI_uncheckshowheader.jpg
+
   + 
-
-
-
 
 
 
