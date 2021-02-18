@@ -187,11 +187,32 @@ CI_animationsettings.jpg
   + Right click on the upper horizontal axis, and uncheck Show Header.
 CI_uncheckshowheader.jpg
 
-  + 
+  + Edit the lower horizontal axis title to "Proportion of "Strongly Agree" responses (with 95% CI bands)"
 
+  + Right click on Country on the vertical axis, and change the font color to black, font size to 9, and Alignment to Centre.
 
+  + Right click on Parameter Survey Text, and select Show Parameter.
 
+*Part 4: Creating the dashboard
+dashboard_v1.jpg
 
+  + 1) Toggle the size of the dashboard to Automatic
+  
+  + 2) Drag in the Likert Chart, change the legend to floating, and resize accordingly as a single row above the chart.
+  
+  + 3) Drag in the Confidence Interval Error Bar Chart
+  
+  + 4) Add the relevant filters for demographics into the dashboard
+dashboard_exposing_filters.jpg
+
+  + 5) Add a text box on the top left, adjust the contents as shown.
+dashboard_textbox1_title.jpg
+
+  + 6) Expose the Survey Text parameter and place it on the top right of the dashboard.
+  
+  + 7) Add Blank objects around the dashboard to resize the layout accordingly.
+  
+  + 8) Add text boxes at the bottom to cite the data source and link.
 
 
 
