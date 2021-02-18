@@ -53,7 +53,7 @@ Provide step-by-step description on how the data visualization was prepared.
   + Select all the columns that we do not want to use, right-click, and select Hide
 ![Removing unnecessary columns](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/2_hide_data_columns.jpg)
 
-*Part 2: Creating a Likert Chart
+*Part 2: Creating a Likert Chart (Tableau)
 
   + Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree.
 ![Creating Remapped Scores for survey responses](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/remapped_scores_overview.jpg)
