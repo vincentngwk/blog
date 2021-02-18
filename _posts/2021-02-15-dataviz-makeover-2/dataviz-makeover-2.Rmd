@@ -47,14 +47,62 @@ TO ADD TABLEAU PUBLIC LINK HERE!
 Provide step-by-step description on how the data visualization was prepared.
 
 *Part 1: Bringing the data in
-  + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file ("australia.csv") into Tableau. Select the New Union function to import the chosen countries data using a manual connection.
+  + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file ("australia.csv") into Tableau. Select the New Union function to import the chosen countries data using a manual connection. Note: Upon inspecting the raw data in excel, for 'Sweden.csv', column header 'record' had to be changed to 'RecordNo' to be consistent with the other data files.
 ![Importing data and performing a Union](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/1_import_data_union.JPG)
 
   + Select all the columns that we do not want to use, right-click, and select Hide
 ![Removing unnecessary columns](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/2_hide_data_columns.jpg)
 
+*Part 2: Creating a Likert Chart
+
+  + Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree.
+
+
+  + Create a Parameter: Survey Text. This is a String data type parameter. This is for users to choose which survey question to visualize and analyze. We will map the relevant display values as the respective survey text questions.
+![Creating Parameter: Survey Text](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/parameter_surverytext.jpg)
+
+  + Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses.
+
+
+
+
+  + Create a calculated field for Age Group
+![Creating Age Group](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/3_agegroup.jpg)
+
+  + Create a calculated field for Household Size Groups
+![Creating Household Size Groups](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/4_householdsize_group.jpg)
+
+  + Create calculated field: Number of records. This is just a constant value of 1.
+
+  + Create calculated field: Total Count
+![Creating Total Count](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/total_count.jpg)
+
+  + Create calculated field: Count Negative
+![Creating Count Negative](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/countnegative.jpg)
+
+  + Create calculated field: Total Count Negative
+![Creating Total Count Negative](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/totalcountnegative.jpg)
+
+  + Create calculated field: Percentage
+![Creating Percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_percentage.jpg)
+
+  + Create calculated field: Gantt Start
+![Creating Gantt Start](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_ganttstart.jpg)
+  
+  + Create calculated field: Gantt Percent
+![Creating Gantt Percent](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_ganttpercent.jpg)
+
+
+
+
+
+
+
+
+
+
 # 5.0 Section E
-Describe three major observations revealed by the data visualisation prepared.
+Describe three major observations revealed by the data visualization prepared.
 
 
 

@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","countnegative.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_percentage.jpg","parameter_surverytext.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2114,12 +2114,27 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>The final dashboard can be accessed here: TO ADD TABLEAU PUBLIC LINK HERE!</p>
 <h1 id="section-d">4.0 Section D</h1>
 <p>Provide step-by-step description on how the data visualization was prepared.</p>
-<p>*Part 1: Bringing the data in + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file (“australia.csv”) into Tableau. Select the New Union function to import the chosen countries data using a manual connection. <img src="1_import_data_union.JPG" alt="Importing data and performing a Union" /></p>
+<p>*Part 1: Bringing the data in + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file (“australia.csv”) into Tableau. Select the New Union function to import the chosen countries data using a manual connection. Note: Upon inspecting the raw data in excel, for ‘Sweden.csv’, column header ‘record’ had to be changed to ‘RecordNo’ to be consistent with the other data files. <img src="1_import_data_union.JPG" alt="Importing data and performing a Union" /></p>
 <ul>
 <li>Select all the columns that we do not want to use, right-click, and select Hide <img src="2_hide_data_columns.jpg" alt="Removing unnecessary columns" /></li>
 </ul>
+<p>*Part 2: Creating a Likert Chart</p>
+<ul>
+<li><p>Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree.</p></li>
+<li><p>Create a Parameter: Survey Text. This is a String data type parameter. This is for users to choose which survey question to visualize and analyze. We will map the relevant display values as the respective survey text questions. <img src="parameter_surverytext.jpg" alt="Creating Parameter: Survey Text" /></p></li>
+<li><p>Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses.</p></li>
+<li><p>Create a calculated field for Age Group <img src="3_agegroup.jpg" alt="Creating Age Group" /></p></li>
+<li><p>Create a calculated field for Household Size Groups <img src="4_householdsize_group.jpg" alt="Creating Household Size Groups" /></p></li>
+<li><p>Create calculated field: Number of records. This is just a constant value of 1.</p></li>
+<li><p>Create calculated field: Total Count <img src="total_count.jpg" alt="Creating Total Count" /></p></li>
+<li><p>Create calculated field: Count Negative <img src="countnegative.jpg" alt="Creating Count Negative" /></p></li>
+<li><p>Create calculated field: Total Count Negative <img src="totalcountnegative.jpg" alt="Creating Total Count Negative" /></p></li>
+<li><p>Create calculated field: Percentage <img src="likert_percentage.jpg" alt="Creating Percentage" /></p></li>
+<li><p>Create calculated field: Gantt Start <img src="likert_ganttstart.jpg" alt="Creating Gantt Start" /></p></li>
+<li><p>Create calculated field: Gantt Percent <img src="likert_ganttpercent.jpg" alt="Creating Gantt Percent" /></p></li>
+</ul>
 <h1 id="section-e">5.0 Section E</h1>
-<p>Describe three major observations revealed by the data visualisation prepared.</p>
+<p>Describe three major observations revealed by the data visualization prepared.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
