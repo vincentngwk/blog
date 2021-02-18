@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","CI_animationsettings.jpg","CI_change_measurename_colors.jpg","CI_keep_only2measurenames.jpg","CI_measurenames_duplicate.jpg","CI_measurevalues_upper_axis.jpg","CI_prop.jpg","CI_stronglyagreesinglecount.jpg","CI_synchronize_axis.jpg","CI_uncheckshowheader.jpg","countnegative.jpg","dashboard_exposing_filters.jpg","dashboard_textbox1_title.jpg","dashboard_v1.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","likert_addreferenceline.jpg","likert_change_label_format.jpg","likert_cols_rows.jpg","likert_compute_using_selected.jpg","likert_fields_to_marks_setting.jpg","likert_format_xaxis_topercentage.jpg","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_markto_ganttbar.jpg","likert_percentage.jpg","likert_selected_to_filter.jpg","likert_sort_country_prop.jpg","parameter_surverytext.jpg","remapped_scores_overview.jpg","selected.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg","vac1_score.jpg"]}
+  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","CI_animationsettings.jpg","CI_change_measurename_colors.jpg","CI_keep_only2measurenames.jpg","CI_measurenames_duplicate.jpg","CI_measurevalues_upper_axis.jpg","CI_prop.jpg","CI_stronglyagreesinglecount.jpg","CI_synchronize_axis.jpg","CI_uncheckshowheader.jpg","countnegative.jpg","dashboard_exposing_filters.jpg","dashboard_textbox1_title.jpg","dashboard_v1.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","final_tableau_dashboard.jpg","likert_addreferenceline.jpg","likert_change_label_format.jpg","likert_cols_rows.jpg","likert_compute_using_selected.jpg","likert_fields_to_marks_setting.jpg","likert_format_xaxis_topercentage.jpg","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_markto_ganttbar.jpg","likert_percentage.jpg","likert_selected_to_filter.jpg","likert_sort_country_prop.jpg","original_graph.jpg","parameter_surverytext.jpg","remapped_scores_overview.jpg","selected.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg","vac1_score.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2101,23 +2101,56 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="d-article">
 <h1 id="section-a">1.0 Section A</h1>
 <p>Critic the graph from both its clarity and aesthetics. At least three from each evaluation criterion.</p>
+<p>These are the original data visualizations created by the research team conducting a study to understand the willingness of the public on Covid-19 vaccination.</p>
+<center>
+<figure>
+<img src="original_graph.jpg" style="width:100.0%" alt="Original Graph Given" /><figcaption aria-hidden="true">Original Graph Given</figcaption>
+</figure>
+</center>
 <ul>
-<li><p>Clarity:</p></li>
-<li><p>Aesthetics:</p></li>
+<li>Clarity:
+<ul>
+<li><p>1st chart shows a cumulative horizontal stacked bar chart. It is hard for users to perform comparisons across the countries due to the differing positions.</p></li>
+<li><p>There are no value labels on the 1st chart, further making it hard for users to have a better idea of category responses across countries which may have bars with similar sizes</p></li>
+<li><p>The data source utilized for this visualization was not made known. This makes is tough for users to do further exploration or fact-checking if needed.</p></li>
+<li><p>The 1st chart seems to be sorted in alphabetical order, however the 2nd chart on the right is sorted by descending proportion of responses with “Strongly Agree”. This makes it possible confusing for users, especially when the 2nd chart was probably meant to provide a more specific view of the pro-vaccine sentiments of the various countries.</p></li>
+<li><p>Knowing the data source, there are actually multiple questions that were asked, and Vac 1 only provides a single narrow perspective as to various countries’ behaviour towards Covid-19 vaccines. This makes it hard for users to get a meaningful and balanced viewpoint.</p></li>
+<li><p>There is a lack of breakdown of various population demographic fields such as gender, age, etc. Such fields could have provide meaningful and different narratives that are possibly actionable by governments or organizations.</p></li>
+</ul></li>
+<li>Aesthetics:
+<ul>
+<li><p>Country names are in lower case and non-standardized. While not wrong, it is aesthetically not pleasing.</p></li>
+<li><p>The actual contents of the survey question is not shown, instead it is left as “Vac 1”. It is hard for users to interpret the results in a meaningful way without understanding the background context.</p></li>
+<li><p>The colors are seemingly random, as strong colors like red (which typically signify negativity) are used for a Neutral response, as opposed to Strongly Disagree responses.</p></li>
+</ul></li>
 </ul>
 <h1 id="section-b">2.0 Section B</h1>
+<figure>
+<img src="final_tableau_dashboard.jpg" alt="Final Tableau Dashboard" /><figcaption aria-hidden="true">Final Tableau Dashboard</figcaption>
+</figure>
 <ul>
-<li>Advantages:</li>
+<li>Advantages:
+<ul>
+<li><p>A likert chart is created to provide a comparison where Negative sentiments are clearly on the left, and Positive sentiments are clearly on the right.</p></li>
+<li><p>There is a reference line in the middle of the Neutral category, to make it easier for users to anchor to, and make sense of the values.</p></li>
+<li><p>There are value labels on the 1st chart to further help users make sense of, and compare values between countries where the size of the bars could be quite similar.</p></li>
+<li><p>The 2nd chart provides a 95% confidence interval band to help users have a better idea of how reliable the estimates of the responses are, as values are quoted in % format. (Some countries may have had lesser responses, yet have an overall higher proportion of Strongly Agree. It may be debatable as to how accurately it represents that particular demographic segment.)</p></li>
+<li><p>Both charts have been sorted in descending order of Proportion of Strongly Agree sentiments for each Survey question. This standardization allows for better ease of comparison.</p></li>
+<li><p>A parameter with a drop-down list is provided for users to be able to see responses and trends for different questions. This provides users with more context, whether it be confidence in the vaccine, or fear of the disease, etc. This can provide a more well-rounded or balanced viewpoint.</p></li>
+<li><p>Demographic fields have been neatly grouped/ binned and are available for further filtering and analysis if required. This may reveal more interesting perspectives apart from a quick, high-level/ superficial interpretation based on the original charts.</p></li>
+</ul></li>
 </ul>
 <h1 id="section-c">3.0 Section C</h1>
 <p>Using Tableau, design the proposed data visualization.</p>
-<p>The final dashboard can be accessed here: TO ADD TABLEAU PUBLIC LINK HERE!</p>
+<p>The final dashboard can be accessed here: <a href="https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM2_submission_v2/DVM2Dashboard?publish=yes" class="uri">https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM2_submission_v2/DVM2Dashboard?publish=yes</a></p>
 <h1 id="section-d">4.0 Section D</h1>
 <p>Provide step-by-step description on how the data visualization was prepared.</p>
 <p>*Part 1: Bringing the data in + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file (“australia.csv”) into Tableau. Select the New Union function to import the chosen countries data using a manual connection. Note: Upon inspecting the raw data in excel, for ‘Sweden.csv’, column header ‘record’ had to be changed to ‘RecordNo’ to be consistent with the other data files.</p>
+<center>
 <figure>
-<img src="1_import_data_union.JPG" alt="Importing data and performing a Union" /><figcaption aria-hidden="true">Importing data and performing a Union</figcaption>
+<img src="1_import_data_union.JPG" style="width:50.0%" alt="Importing data and performing a Union" /><figcaption aria-hidden="true">Importing data and performing a Union</figcaption>
 </figure>
+</center>
 <ul>
 <li>Select all the columns that we do not want to use, right-click, and select Hide <img src="2_hide_data_columns.jpg" alt="Removing unnecessary columns" /></li>
 </ul>
@@ -2208,8 +2241,14 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>Add text boxes at the bottom to cite the data source and link.</li>
 </ol></li>
 </ul>
+<p>*Part 6: Going live + Publish the final dashboard to Tableau Public Server.</p>
 <h1 id="section-e">5.0 Section E</h1>
 <p>Describe three major observations revealed by the data visualization prepared.</p>
+<ul>
+<li><p>1st insight:</p></li>
+<li><p>2nd insight:</p></li>
+<li><p>3rd insight:</p></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

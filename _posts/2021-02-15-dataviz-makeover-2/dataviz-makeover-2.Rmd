@@ -20,36 +20,72 @@ knitr::opts_chunk$set(echo = FALSE)
 # 1.0 Section A
 Critic the graph from both its clarity and aesthetics.  At least three from each evaluation criterion.
 
+These are the original data visualizations created by the research team conducting a study to understand the willingness of the public on Covid-19 vaccination.
+
+<center>
+
+![Original Graph Given](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/original_graph.jpg){width=100%}
+
+</center>
 
 
 * Clarity:
+  + 1st chart shows a cumulative horizontal stacked bar chart. It is hard for users to perform comparisons across the countries due to the differing positions.
+  
+  + There are no value labels on the 1st chart, further making it hard for users to have a better idea of category responses across countries which may have bars with similar sizes
+  
+  + The data source utilized for this visualization was not made known. This makes is tough for users to do further exploration or fact-checking if needed.
+  
+  + The 1st chart seems to be sorted in alphabetical order, however the 2nd chart on the right is sorted by descending proportion of responses with "Strongly Agree". This makes it possible confusing for users, especially when the 2nd chart was probably meant to provide a more specific view of the pro-vaccine sentiments of the various countries.
 
-
+  + Knowing the data source, there are actually multiple questions that were asked, and Vac 1 only provides a single narrow perspective as to various countries' behaviour towards Covid-19 vaccines. This makes it hard for users to get a meaningful and balanced viewpoint.
+  
+  + There is a lack of breakdown of various population demographic fields such as gender, age, etc. Such fields could have provide meaningful and different narratives that are possibly actionable by governments or organizations. 
 
 * Aesthetics:
-
+  + Country names are in lower case and non-standardized. While not wrong, it is aesthetically not pleasing.
+  
+  + The actual contents of the survey question is not shown, instead it is left as "Vac 1". It is hard for users to interpret the results in a meaningful way without understanding the background context.
+  
+  + The colors are seemingly random, as strong colors like red (which typically signify negativity) are used for a Neutral response, as opposed to Strongly Disagree responses.
 
 
 # 2.0 Section B
-
+![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/final_tableau_dashboard.jpg)
 
 * Advantages:
-
+  + A likert chart is created to provide a comparison where Negative sentiments are clearly on the left, and Positive sentiments are clearly on the right.
+  
+  + There is a reference line in the middle of the Neutral category, to make it easier for users to anchor to, and make sense of the values.
+  
+  + There are value labels on the 1st chart to further help users make sense of, and compare values between countries where the size of the bars could be quite similar.
+  
+  + The 2nd chart provides a 95% confidence interval band to help users have a better idea of how reliable the estimates of the responses are, as values are quoted in % format. (Some countries may have had lesser responses, yet have an overall higher proportion of Strongly Agree. It may be debatable as to how accurately it represents that particular demographic segment.) 
+  
+  + Both charts have been sorted in descending order of Proportion of Strongly Agree sentiments for each Survey question. This standardization allows for better ease of comparison.
+  
+  + A parameter with a drop-down list is provided for users to be able to see responses and trends for different questions. This provides users with more context, whether it be confidence in the vaccine, or fear of the disease, etc. This can provide a more well-rounded or balanced viewpoint. 
+  
+  + Demographic fields have been neatly grouped/ binned and are available for further filtering and analysis if required. This may reveal more interesting perspectives apart from a quick, high-level/ superficial interpretation based on the original charts.
 
 
 # 3.0 Section C
 Using Tableau, design the proposed data visualization.
 
 The final dashboard can be accessed here: 
-TO ADD TABLEAU PUBLIC LINK HERE!
+https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM2_submission_v2/DVM2Dashboard?publish=yes
 
 # 4.0 Section D
 Provide step-by-step description on how the data visualization was prepared.
 
 *Part 1: Bringing the data in
   + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file ("australia.csv") into Tableau. Select the New Union function to import the chosen countries data using a manual connection. Note: Upon inspecting the raw data in excel, for 'Sweden.csv', column header 'record' had to be changed to 'RecordNo' to be consistent with the other data files.
-  
-![Importing data and performing a Union](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/1_import_data_union.JPG)
+
+<center>
+
+![Importing data and performing a Union](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/1_import_data_union.JPG){width=50%}
+
+</center>
 
   + Select all the columns that we do not want to use, right-click, and select Hide
 ![Removing unnecessary columns](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/2_hide_data_columns.jpg)
@@ -213,12 +249,21 @@ CI_prop.jpg
   
   + 8) Add text boxes at the bottom to cite the data source and link.
 
-
-
-
+*Part 6: Going live
+  + Publish the final dashboard to Tableau Public Server.
 
 # 5.0 Section E
 Describe three major observations revealed by the data visualization prepared.
+
+  + 1st insight:
+  
+  
+  + 2nd insight:
+  
+  
+  + 3rd insight:
+  
+  
 
 
 
