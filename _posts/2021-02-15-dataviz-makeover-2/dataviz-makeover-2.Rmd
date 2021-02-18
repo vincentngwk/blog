@@ -119,7 +119,6 @@ Provide step-by-step description on how the data visualization was prepared.
 ![Change format of X axis to percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_xaxis_topercentage.jpg)
 
   + Change format of Percentage field to 1 decimal point
-![Change format of Percentage field percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_percentagefield_1dp.jpg)
 
   + Change title of X axis to "Survey Responses as Proportion of Total Responses"
 
@@ -132,13 +131,13 @@ Provide step-by-step description on how the data visualization was prepared.
 *Part 3: Creating Confidence Interval Error Bar charts
 
   + Create a calculated field for Strongly Agree Single Count. We are creating counts for responses with "Strongly Agree".
-CI_stronglyagreesinglecount.jpg
+![Create calculated field for Strongly Agree Single Count](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_stronglyagreesinglecount.jpg)
 
   + Create a calculated field for Prop. We want to find out the proportion of responses which gave "Strongly Agree".
 CI_prop.jpg
 
   + Go back to the Likert chart, and sort Country (rows) by Prop under Field. This allows us to sort in descending order for countries with highest to lowest proportions of responses with "Strongly Agree".
-likert_sort_country_prop.jpg
+![Sort Country in Likert Chart by Prop](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_sort_country_prop.jpg)
 
   + Create calculated field for Prop SE
 
@@ -155,23 +154,23 @@ likert_sort_country_prop.jpg
   + Change Mark for Props from Automatic (line) to Circle
   
   + Move Measure Values to upper secondary horizontal axis
-CI_measurevalues_upper_axis.jpg
+![Move Measure Values to upper horizontal axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_measurevalues_upper_axis.jpg)
 
   + Edit the filter for Measure Names, and keep only 2 measures: Prop_Lower Limit 95% and Prop_Upper Limit 95%.
-CI_keep_only2measurenames.jpg
+![Add Measure Values, keep only Upper and Lower limit 95%](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_keep_only2measurenames.jpg)
 
   + Move Selected to Filters, and uncheck 'Null' values.
 
   + Change Measure Values from Circle to Line. Press Ctrl+Click and drag measure values to Path and repeat the same to Colour.
-CI_measurenames_duplicate.jpg
+![Change from circle to line, add Measure Names to other roles.](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_measurenames_duplicate.jpg)
 
   + Right click on the X axis with a smaller range of values, and select Synchronize axis
-CI_synchronize_axis.jpg
+![Synchronize horizontal axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_synchronize_axis.jpg)
 
   + Under AGG(Prop) mark, change Measure Names from Detail to Colour.
 
   + Change colors of Measure Names (on right side) as required
-CI_change_measurename_colors.jpg
+![Change colors of Measure Names](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_change_measurename_colors.jpg)
 
   + Under columns, change the order of Measure Values and AGG(Prop). This allows AGG(Prop) Circle to appear 'in front of' Measure Values Line.
 
@@ -182,10 +181,10 @@ CI_change_measurename_colors.jpg
   + Under Rows, Country, Sort by Field > Prop in descending manner. (similar to the Likert Chart)
 
   + Turn on Animations, and change settings as desired.
-CI_animationsettings.jpg
+![Turn on, and change Animation settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_animationsettings.jpg)
 
   + Right click on the upper horizontal axis, and uncheck Show Header.
-CI_uncheckshowheader.jpg
+![Uncheck upper horizontal axis header](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_uncheckshowheader.jpg)
 
   + Edit the lower horizontal axis title to "Proportion of "Strongly Agree" responses (with 95% CI bands)"
 
@@ -194,7 +193,8 @@ CI_uncheckshowheader.jpg
   + Right click on Parameter Survey Text, and select Show Parameter.
 
 *Part 4: Creating the dashboard
-dashboard_v1.jpg
+
+![Creating the Dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_v1.jpg)
 
   + 1) Toggle the size of the dashboard to Automatic
   
@@ -203,10 +203,10 @@ dashboard_v1.jpg
   + 3) Drag in the Confidence Interval Error Bar Chart
   
   + 4) Add the relevant filters for demographics into the dashboard
-dashboard_exposing_filters.jpg
+![Expose filters on the dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_exposing_filters.jpg)
 
   + 5) Add a text box on the top left, adjust the contents as shown.
-dashboard_textbox1_title.jpg
+![Add text boxes](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_textbox1_title.jpg)
 
   + 6) Expose the Survey Text parameter and place it on the top right of the dashboard.
   
