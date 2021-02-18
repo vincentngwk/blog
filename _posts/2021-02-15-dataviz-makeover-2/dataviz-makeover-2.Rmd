@@ -48,6 +48,7 @@ Provide step-by-step description on how the data visualization was prepared.
 
 *Part 1: Bringing the data in
   + After downloading the data files, unzip the folders and ensure they are all in the same location. Drag the 1st file ("australia.csv") into Tableau. Select the New Union function to import the chosen countries data using a manual connection. Note: Upon inspecting the raw data in excel, for 'Sweden.csv', column header 'record' had to be changed to 'RecordNo' to be consistent with the other data files.
+  
 ![Importing data and performing a Union](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/1_import_data_union.JPG)
 
   + Select all the columns that we do not want to use, right-click, and select Hide
@@ -124,8 +125,6 @@ Provide step-by-step description on how the data visualization was prepared.
 
   + Change Label settings to align to middle and make font size smaller
 ![Change format of Label settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_change_label_format.jpg)
-
-
 
 
 *Part 3: Creating Confidence Interval Error Bar charts
