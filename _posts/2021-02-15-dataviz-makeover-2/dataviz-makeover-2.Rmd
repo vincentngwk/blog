@@ -54,7 +54,7 @@ These are the original data visualizations created by the research team conducti
 
 <center>
 
-![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/DVZM2_drawing.jpg)
+![Drawing of dashboard design](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/DVZM2_drawing.jpg)
 
 </center>
 
