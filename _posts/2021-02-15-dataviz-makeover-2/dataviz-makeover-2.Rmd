@@ -56,15 +56,14 @@ Provide step-by-step description on how the data visualization was prepared.
 *Part 2: Creating a Likert Chart
 
   + Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree.
-
+![Creating Remapped Scores for survey responses](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/remapped_scores_overview.jpg)
+![Creating Remapped Scores for survey responses - Example for vac1_score](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/vac1_score.jpg)
 
   + Create a Parameter: Survey Text. This is a String data type parameter. This is for users to choose which survey question to visualize and analyze. We will map the relevant display values as the respective survey text questions.
 ![Creating Parameter: Survey Text](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/parameter_surverytext.jpg)
 
   + Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses.
-
-
-
+![Creating Parameter: Survey Text](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/selected.jpg)
 
   + Create a calculated field for Age Group
 ![Creating Age Group](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/3_agegroup.jpg)
@@ -92,7 +91,40 @@ Provide step-by-step description on how the data visualization was prepared.
   + Create calculated field: Gantt Percent
 ![Creating Gantt Percent](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_ganttpercent.jpg)
 
+  + Bring Country to Rows, and Gantt Percent to Columns
+![Setting Rows and Columns](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_cols_rows.jpg)
 
+  + Change Marks from Automatic to Gantt Bar
+![Changing to Gantt Bar](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_markto_ganttbar.jpg)
+
+  + Bring Selected to Colour and Detail, Percentage to Size and Label
+![Bringing Selected and Percentage to Marks settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_fields_to_marks_setting.jpg)
+
+  + Bring Selected to Filters, and deselect Null values
+![Bringing Selected to Filters and removing null values](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_selected_to_filter.jpg)
+
+  + Ensure that Percentage (Size and Label), and Gantt Percent are toggled to compute using Selected. 
+![Compute using Selected](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_compute_using_selected.jpg)
+
+  + Change view from Standard to Entire View
+
+  + Edit title of Legend ("Selected") to "Responses"
+
+  + Right click on Survey Text Parameter and select Show Parameter
+
+  + Add Reference Line to X axis of Likert chart by right clicking on the X axis. Change the settings to picture shown below.
+![Add Reference Line to X axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_addreferenceline.jpg)
+
+  + Change format of X axis to percentage with 0 decimal points
+![Change format of X axis to percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_xaxis_topercentage.jpg)
+
+  + Change format of Percentage field to 1 decimal point
+![Change format of Percentage field percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_percentagefield_1dp.jpg)
+
+  + Change title of X axis to "Survey Responses as Proportion of Total Responses"
+
+  + Change Label settings to align to middle and make font size smaller
+![Change format of Label settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_change_label_format.jpg)
 
 
 

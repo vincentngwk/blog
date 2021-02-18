@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","countnegative.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_percentage.jpg","parameter_surverytext.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg"]}
+  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","countnegative.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","likert_cols_rows.jpg","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_markto_ganttbar.jpg","likert_percentage.jpg","parameter_surverytext.jpg","remapped_scores_overview.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg","vac1_score.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2120,9 +2120,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul>
 <p>*Part 2: Creating a Likert Chart</p>
 <ul>
-<li><p>Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree.</p></li>
+<li><p>Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree. <img src="remapped_scores_overview.jpg" alt="Creating Remapped Scores for survey responses" /> <img src="vac1_score.jpg" alt="Creating Remapped Scores for survey responses - Example for vac1_score" /></p></li>
 <li><p>Create a Parameter: Survey Text. This is a String data type parameter. This is for users to choose which survey question to visualize and analyze. We will map the relevant display values as the respective survey text questions. <img src="parameter_surverytext.jpg" alt="Creating Parameter: Survey Text" /></p></li>
-<li><p>Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses.</p></li>
+<li><p>Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses. <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/selected.jpg" alt="Creating Parameter: Survey Text" /></p></li>
 <li><p>Create a calculated field for Age Group <img src="3_agegroup.jpg" alt="Creating Age Group" /></p></li>
 <li><p>Create a calculated field for Household Size Groups <img src="4_householdsize_group.jpg" alt="Creating Household Size Groups" /></p></li>
 <li><p>Create calculated field: Number of records. This is just a constant value of 1.</p></li>
@@ -2132,6 +2132,19 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p>Create calculated field: Percentage <img src="likert_percentage.jpg" alt="Creating Percentage" /></p></li>
 <li><p>Create calculated field: Gantt Start <img src="likert_ganttstart.jpg" alt="Creating Gantt Start" /></p></li>
 <li><p>Create calculated field: Gantt Percent <img src="likert_ganttpercent.jpg" alt="Creating Gantt Percent" /></p></li>
+<li><p>Bring Country to Rows, and Gantt Percent to Columns <img src="likert_cols_rows.jpg" alt="Setting Rows and Columns" /></p></li>
+<li><p>Change Marks from Automatic to Gantt Bar <img src="likert_markto_ganttbar.jpg" alt="Changing to Gantt Bar" /></p></li>
+<li><p>Bring Selected to Colour and Detail, Percentage to Size and Label <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_fields_to_marks_setting.jpg" alt="Bringing Selected and Percentage to Marks settings" /></p></li>
+<li><p>Bring Selected to Filters, and deselect Null values <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_selected_to_filter.jpg" alt="Bringing Selected to Filters and removing null values" /></p></li>
+<li><p>Ensure that Percentage (Size and Label), and Gantt Percent are toggled to compute using Selected. <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_compute_using_selected.jpg" alt="Compute using Selected" /></p></li>
+<li><p>Change view from Standard to Entire View</p></li>
+<li><p>Edit title of Legend (“Selected”) to “Responses”</p></li>
+<li><p>Right click on Survey Text Parameter and select Show Parameter</p></li>
+<li><p>Add Reference Line to X axis of Likert chart by right clicking on the X axis. Change the settings to picture shown below. <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_addreferenceline.jpg" alt="Add Reference Line to X axis" /></p></li>
+<li><p>Change format of X axis to percentage with 0 decimal points <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_xaxis_topercentage.jpg" alt="Change format of X axis to percentage" /></p></li>
+<li><p>Change format of Percentage field to 1 decimal point <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_percentagefield_1dp.jpg" alt="Change format of Percentage field percentage" /></p></li>
+<li><p>Change title of X axis to “Survey Responses as Proportion of Total Responses”</p></li>
+<li><p>Change Label settings to align to middle and make font size smaller <img src="E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_change_label_format.jpg" alt="Change format of Label settings" /></p></li>
 </ul>
 <h1 id="section-e">5.0 Section E</h1>
 <p>Describe three major observations revealed by the data visualization prepared.</p>
