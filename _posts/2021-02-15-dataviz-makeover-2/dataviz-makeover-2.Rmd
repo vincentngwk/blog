@@ -51,7 +51,7 @@ These are the original data visualizations created by the research team conducti
 
 
 # 2.0 Section B
-![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/final_tableau_dashboard.jpg)
+
 
 * Advantages:
   + A likert chart is created to provide a comparison where Negative sentiments are clearly on the left, and Positive sentiments are clearly on the right.
@@ -71,6 +71,12 @@ These are the original data visualizations created by the research team conducti
 
 # 3.0 Section C
 Using Tableau, design the proposed data visualization.
+
+<center>
+
+![Final Tableau Dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/final_tableau_dashboard.jpg)
+
+</center>
 
 The final dashboard can be accessed here: 
 https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM2_submission_v2/DVM2Dashboard?publish=yes
