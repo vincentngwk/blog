@@ -87,6 +87,7 @@ Using Tableau, design the proposed data visualization.
 The final dashboard can be accessed here: 
 https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DVM2_submission_v2/DVM2Dashboard?publish=yes
 
+
 # 4.0 Section D
 Provide step-by-step description on how the data visualization was prepared.
 
