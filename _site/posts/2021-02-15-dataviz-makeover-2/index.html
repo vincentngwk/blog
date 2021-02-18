@@ -2156,35 +2156,176 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul>
 <p>*Part 2: Creating a Likert Chart (Tableau)</p>
 <ul>
-<li><p>Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree. <img src="remapped_scores_overview.jpg" alt="Creating Remapped Scores for survey responses" /> <img src="vac1_score.jpg" alt="Creating Remapped Scores for survey responses - Example for vac1_score" /></p></li>
-<li><p>Create a Parameter: Survey Text. This is a String data type parameter. This is for users to choose which survey question to visualize and analyze. We will map the relevant display values as the respective survey text questions. <img src="parameter_surverytext.jpg" alt="Creating Parameter: Survey Text" /></p></li>
-<li><p>Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses. <img src="selected.jpg" alt="Creating Parameter: Survey Text" /></p></li>
-<li><p>Create a calculated field for Age Group <img src="3_agegroup.jpg" alt="Creating Age Group" /></p></li>
-<li><p>Create a calculated field for Household Size Groups <img src="4_householdsize_group.jpg" alt="Creating Household Size Groups" /></p></li>
+<li>Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree.</li>
+</ul>
+<center>
+<figure>
+<img src="remapped_scores_overview.jpg" style="width:20.0%" alt="Creating Remapped Scores for survey responses" /><figcaption aria-hidden="true">Creating Remapped Scores for survey responses</figcaption>
+</figure>
+<figure>
+<img src="vac1_score.jpg" style="width:20.0%" alt="Creating Remapped Scores for survey responses - Example for vac1_score" /><figcaption aria-hidden="true">Creating Remapped Scores for survey responses - Example for vac1_score</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create a Parameter: Survey Text. This is a String data type parameter. This is for users to choose which survey question to visualize and analyze. We will map the relevant display values as the respective survey text questions.</li>
+</ul>
+<center>
+<figure>
+<img src="parameter_surverytext.jpg" alt="Creating Parameter: Survey Text" /><figcaption aria-hidden="true">Creating Parameter: Survey Text</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses.</li>
+</ul>
+<center>
+<figure>
+<img src="selected.jpg" style="width:40.0%" alt="Creating Parameter: Survey Text" /><figcaption aria-hidden="true">Creating Parameter: Survey Text</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create a calculated field for Age Group</li>
+</ul>
+<center>
+<figure>
+<img src="3_agegroup.jpg" style="width:30.0%" alt="Creating Age Group" /><figcaption aria-hidden="true">Creating Age Group</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create a calculated field for Household Size Groups</li>
+</ul>
+<center>
+<figure>
+<img src="4_householdsize_group.jpg" style="width:60.0%" alt="Creating Household Size Groups" /><figcaption aria-hidden="true">Creating Household Size Groups</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Create calculated field: Number of records. This is just a constant value of 1.</p></li>
-<li><p>Create calculated field: Total Count <img src="total_count.jpg" alt="Creating Total Count" /></p></li>
-<li><p>Create calculated field: Count Negative <img src="countnegative.jpg" alt="Creating Count Negative" /></p></li>
-<li><p>Create calculated field: Total Count Negative <img src="totalcountnegative.jpg" alt="Creating Total Count Negative" /></p></li>
-<li><p>Create calculated field: Percentage <img src="likert_percentage.jpg" alt="Creating Percentage" /></p></li>
-<li><p>Create calculated field: Gantt Start <img src="likert_ganttstart.jpg" alt="Creating Gantt Start" /></p></li>
-<li><p>Create calculated field: Gantt Percent <img src="likert_ganttpercent.jpg" alt="Creating Gantt Percent" /></p></li>
-<li><p>Bring Country to Rows, and Gantt Percent to Columns <img src="likert_cols_rows.jpg" alt="Setting Rows and Columns" /></p></li>
-<li><p>Change Marks from Automatic to Gantt Bar <img src="likert_markto_ganttbar.jpg" alt="Changing to Gantt Bar" /></p></li>
-<li><p>Bring Selected to Colour and Detail, Percentage to Size and Label <img src="likert_fields_to_marks_setting.jpg" alt="Bringing Selected and Percentage to Marks settings" /></p></li>
-<li><p>Bring Selected to Filters, and deselect Null values <img src="likert_selected_to_filter.jpg" alt="Bringing Selected to Filters and removing null values" /></p></li>
-<li><p>Ensure that Percentage (Size and Label), and Gantt Percent are toggled to compute using Selected. <img src="likert_compute_using_selected.jpg" alt="Compute using Selected" /></p></li>
+<li><p>Create calculated field: Total Count</p></li>
+</ul>
+<center>
+<figure>
+<img src="total_count.jpg" style="width:50.0%" alt="Creating Total Count" /><figcaption aria-hidden="true">Creating Total Count</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Count Negative</li>
+</ul>
+<center>
+<figure>
+<img src="countnegative.jpg" style="width:40.0%" alt="Creating Count Negative" /><figcaption aria-hidden="true">Creating Count Negative</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Total Count Negative</li>
+</ul>
+<center>
+<figure>
+<img src="totalcountnegative.jpg" style="width:40.0%" alt="Creating Total Count Negative" /><figcaption aria-hidden="true">Creating Total Count Negative</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Percentage</li>
+</ul>
+<center>
+<figure>
+<img src="likert_percentage.jpg" style="width:40.0%" alt="Creating Percentage" /><figcaption aria-hidden="true">Creating Percentage</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Gantt Start</li>
+</ul>
+<center>
+<figure>
+<img src="likert_ganttstart.jpg" style="width:40.0%" alt="Creating Gantt Start" /><figcaption aria-hidden="true">Creating Gantt Start</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Gantt Percent</li>
+</ul>
+<center>
+<figure>
+<img src="likert_ganttpercent.jpg" style="width:50.0%" alt="Creating Gantt Percent" /><figcaption aria-hidden="true">Creating Gantt Percent</figcaption>
+</figure>
+</center>
+<ul>
+<li>Bring Country to Rows, and Gantt Percent to Columns</li>
+</ul>
+<center>
+<figure>
+<img src="likert_cols_rows.jpg" style="width:40.0%" alt="Setting Rows and Columns" /><figcaption aria-hidden="true">Setting Rows and Columns</figcaption>
+</figure>
+</center>
+<ul>
+<li>Change Marks from Automatic to Gantt Bar</li>
+</ul>
+<center>
+<figure>
+<img src="likert_markto_ganttbar.jpg" style="width:15.0%" alt="Changing to Gantt Bar" /><figcaption aria-hidden="true">Changing to Gantt Bar</figcaption>
+</figure>
+</center>
+<ul>
+<li>Bring Selected to Colour and Detail, Percentage to Size and Label</li>
+</ul>
+<center>
+<figure>
+<img src="likert_fields_to_marks_setting.jpg" style="width:20.0%" alt="Bringing Selected and Percentage to Marks settings" /><figcaption aria-hidden="true">Bringing Selected and Percentage to Marks settings</figcaption>
+</figure>
+</center>
+<ul>
+<li>Bring Selected to Filters, and deselect Null values</li>
+</ul>
+<center>
+<figure>
+<img src="likert_selected_to_filter.jpg" style="width:40.0%" alt="Bringing Selected to Filters and removing null values" /><figcaption aria-hidden="true">Bringing Selected to Filters and removing null values</figcaption>
+</figure>
+</center>
+<ul>
+<li>Ensure that Percentage (Size and Label), and Gantt Percent are toggled to compute using Selected.</li>
+</ul>
+<center>
+<figure>
+<img src="likert_compute_using_selected.jpg" style="width:30.0%" alt="Compute using Selected" /><figcaption aria-hidden="true">Compute using Selected</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Change view from Standard to Entire View</p></li>
 <li><p>Edit title of Legend (“Selected”) to “Responses”</p></li>
 <li><p>Right click on Survey Text Parameter and select Show Parameter</p></li>
-<li><p>Add Reference Line to X axis of Likert chart by right clicking on the X axis. Change the settings to picture shown below. <img src="likert_addreferenceline.jpg" alt="Add Reference Line to X axis" /></p></li>
-<li><p>Change format of X axis to percentage with 0 decimal points <img src="likert_format_xaxis_topercentage.jpg" alt="Change format of X axis to percentage" /></p></li>
+<li><p>Add Reference Line to X axis of Likert chart by right clicking on the X axis. Change the settings to picture shown below.</p></li>
+</ul>
+<center>
+<figure>
+<img src="likert_addreferenceline.jpg" style="width:30.0%" alt="Add Reference Line to X axis" /><figcaption aria-hidden="true">Add Reference Line to X axis</figcaption>
+</figure>
+</center>
+<ul>
+<li>Change format of X axis to percentage with 0 decimal points</li>
+</ul>
+<center>
+<figure>
+<img src="likert_format_xaxis_topercentage.jpg" style="width:40.0%" alt="Change format of X axis to percentage" /><figcaption aria-hidden="true">Change format of X axis to percentage</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Change format of Percentage field to 1 decimal point</p></li>
 <li><p>Change title of X axis to “Survey Responses as Proportion of Total Responses”</p></li>
-<li><p>Change Label settings to align to middle and make font size smaller <img src="likert_change_label_format.jpg" alt="Change format of Label settings" /></p></li>
+<li><p>Change Label settings to align to middle and make font size smaller</p></li>
 </ul>
+<center>
+<figure>
+<img src="likert_change_label_format.jpg" style="width:30.0%" alt="Change format of Label settings" /><figcaption aria-hidden="true">Change format of Label settings</figcaption>
+</figure>
+</center>
 <p>*Part 3: Creating Confidence Interval Error Bar charts</p>
 <ul>
-<li><p>Create a calculated field for Strongly Agree Single Count. We are creating counts for responses with “Strongly Agree”. <img src="CI_stronglyagreesinglecount.jpg" alt="Create calculated field for Strongly Agree Single Count" /></p></li>
+<li>Create a calculated field for Strongly Agree Single Count. We are creating counts for responses with “Strongly Agree”.</li>
+</ul>
+<center>
+<figure>
+<img src="CI_stronglyagreesinglecount.jpg" style="width:30.0%" alt="Create calculated field for Strongly Agree Single Count" /><figcaption aria-hidden="true">Create calculated field for Strongly Agree Single Count</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Create a calculated field for Prop. We want to find out the proportion of responses which gave “Strongly Agree”. CI_prop.jpg</p></li>
 <li><p>Go back to the Likert chart, and sort Country (rows) by Prop under Field. This allows us to sort in descending order for countries with highest to lowest proportions of responses with “Strongly Agree”. <img src="likert_sort_country_prop.jpg" alt="Sort Country in Likert Chart by Prop" /></p></li>
 <li><p>Create calculated field for Prop SE</p></li>

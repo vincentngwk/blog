@@ -93,55 +93,140 @@ Provide step-by-step description on how the data visualization was prepared.
 *Part 2: Creating a Likert Chart (Tableau)
 
   + Create calculated fields for the various survey question responses. The original data has 1 as Strongly Agree, 3 as Neutral, and 5 as Strongly Disagree. For ease of understanding to the general user, we will remap the scores in reverse order. The remapped score will have 1 as Strongly Disagree, 3 as Neutral, and 5 as Strongly Agree.
-![Creating Remapped Scores for survey responses](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/remapped_scores_overview.jpg)
-![Creating Remapped Scores for survey responses - Example for vac1_score](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/vac1_score.jpg)
+  
+<center>  
+
+![Creating Remapped Scores for survey responses](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/remapped_scores_overview.jpg){width=20%}
+
+
+
+
+![Creating Remapped Scores for survey responses - Example for vac1_score](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/vac1_score.jpg){width=20%}
+
+</center>
 
   + Create a Parameter: Survey Text. This is a String data type parameter. This is for users to choose which survey question to visualize and analyze. We will map the relevant display values as the respective survey text questions.
+  
+<center>
+
 ![Creating Parameter: Survey Text](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/parameter_surverytext.jpg)
 
+</center>
+
   + Create a calculated field: Selected. This picks out what value the users chose in the Survey Text parameter, and the respective visualizations model those responses.
-![Creating Parameter: Survey Text](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/selected.jpg)
+  
+<center>  
+
+![Creating Parameter: Survey Text](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/selected.jpg){width=40%}
+
+</center>
+
 
   + Create a calculated field for Age Group
-![Creating Age Group](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/3_agegroup.jpg)
+
+<center>
+
+![Creating Age Group](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/3_agegroup.jpg){width=30%}
+
+</center>
 
   + Create a calculated field for Household Size Groups
-![Creating Household Size Groups](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/4_householdsize_group.jpg)
+  
+<center>
+  
+![Creating Household Size Groups](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/4_householdsize_group.jpg){width=60%}
+
+</center>
 
   + Create calculated field: Number of records. This is just a constant value of 1.
 
   + Create calculated field: Total Count
-![Creating Total Count](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/total_count.jpg)
+  
+<center>
+  
+![Creating Total Count](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/total_count.jpg){width=50%}
+
+</center>
 
   + Create calculated field: Count Negative
-![Creating Count Negative](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/countnegative.jpg)
+  
+<center>
+
+![Creating Count Negative](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/countnegative.jpg){width=40%}
+
+</center>
 
   + Create calculated field: Total Count Negative
-![Creating Total Count Negative](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/totalcountnegative.jpg)
+  
+<center>
+  
+![Creating Total Count Negative](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/totalcountnegative.jpg){width=40%}
+
+</center>
 
   + Create calculated field: Percentage
-![Creating Percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_percentage.jpg)
+  
+<center>
+  
+![Creating Percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_percentage.jpg){width=40%}
+
+</center>
 
   + Create calculated field: Gantt Start
-![Creating Gantt Start](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_ganttstart.jpg)
   
+<center>
+  
+![Creating Gantt Start](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_ganttstart.jpg){width=40%}
+
+</center>
+
   + Create calculated field: Gantt Percent
-![Creating Gantt Percent](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_ganttpercent.jpg)
+  
+<center>
+  
+![Creating Gantt Percent](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_ganttpercent.jpg){width=50%}
+
+</center>
 
   + Bring Country to Rows, and Gantt Percent to Columns
-![Setting Rows and Columns](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_cols_rows.jpg)
+  
+<center>
+  
+![Setting Rows and Columns](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_cols_rows.jpg){width=40%}
+
+</center>
 
   + Change Marks from Automatic to Gantt Bar
-![Changing to Gantt Bar](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_markto_ganttbar.jpg)
+  
+<center>
+  
+![Changing to Gantt Bar](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_markto_ganttbar.jpg){width=15%}
+
+</center>
 
   + Bring Selected to Colour and Detail, Percentage to Size and Label
-![Bringing Selected and Percentage to Marks settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_fields_to_marks_setting.jpg)
+  
+<center>
+  
+![Bringing Selected and Percentage to Marks settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_fields_to_marks_setting.jpg){width=20%}
+
+</center>
 
   + Bring Selected to Filters, and deselect Null values
-![Bringing Selected to Filters and removing null values](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_selected_to_filter.jpg)
+  
+<center>
+  
+![Bringing Selected to Filters and removing null values](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_selected_to_filter.jpg){width=40%}
+
+</center>
 
   + Ensure that Percentage (Size and Label), and Gantt Percent are toggled to compute using Selected. 
-![Compute using Selected](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_compute_using_selected.jpg)
+  
+<center>
+  
+![Compute using Selected](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_compute_using_selected.jpg){width=30%}
+
+</center>
 
   + Change view from Standard to Entire View
 
@@ -150,23 +235,42 @@ Provide step-by-step description on how the data visualization was prepared.
   + Right click on Survey Text Parameter and select Show Parameter
 
   + Add Reference Line to X axis of Likert chart by right clicking on the X axis. Change the settings to picture shown below.
-![Add Reference Line to X axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_addreferenceline.jpg)
+  
+<center>
+  
+![Add Reference Line to X axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_addreferenceline.jpg){width=30%}
+
+</center>
 
   + Change format of X axis to percentage with 0 decimal points
-![Change format of X axis to percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_xaxis_topercentage.jpg)
+  
+<center>
+  
+![Change format of X axis to percentage](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_format_xaxis_topercentage.jpg){width=40%}
+
+</center>
 
   + Change format of Percentage field to 1 decimal point
 
   + Change title of X axis to "Survey Responses as Proportion of Total Responses"
 
   + Change Label settings to align to middle and make font size smaller
-![Change format of Label settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_change_label_format.jpg)
+  
+<center>
+  
+![Change format of Label settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_change_label_format.jpg){width=30%}
 
+</center>
 
 *Part 3: Creating Confidence Interval Error Bar charts
 
   + Create a calculated field for Strongly Agree Single Count. We are creating counts for responses with "Strongly Agree".
-![Create calculated field for Strongly Agree Single Count](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_stronglyagreesinglecount.jpg)
+  
+<center>
+  
+![Create calculated field for Strongly Agree Single Count](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_stronglyagreesinglecount.jpg){width=30%}
+
+</center>
 
   + Create a calculated field for Prop. We want to find out the proportion of responses which gave "Strongly Agree".
 CI_prop.jpg
