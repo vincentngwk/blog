@@ -52,6 +52,7 @@ These are the original data visualizations created by the research team conducti
 
 # 2.0 Section B
 
+Drawing goes here.
 
 * Advantages:
   + A likert chart is created to provide a comparison where Negative sentiments are clearly on the left, and Positive sentiments are clearly on the right.
