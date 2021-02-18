@@ -273,43 +273,102 @@ Provide step-by-step description on how the data visualization was prepared.
 </center>
 
   + Create a calculated field for Prop. We want to find out the proportion of responses which gave "Strongly Agree".
-CI_prop.jpg
+
+<center>
+
+![Create calculated field Prop](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_prop.jpg){width=50%}
+
+</center>
 
   + Go back to the Likert chart, and sort Country (rows) by Prop under Field. This allows us to sort in descending order for countries with highest to lowest proportions of responses with "Strongly Agree".
-![Sort Country in Likert Chart by Prop](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_sort_country_prop.jpg)
+  
+<center>
+  
+![Sort Country in Likert Chart by Prop](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/likert_sort_country_prop.jpg){width=30%}
+
+</center>
 
   + Create calculated field for Prop SE
 
-  + Create calculated field for Z_95%
+<center>
+
+![Create calculated field PropSE](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_propSE.jpg){width=60%}
+
+</center>
+
+  + Create calculated field for Z_95%. It has a constant value of "1.959964".
 
   + Create calculated field for Prop_Margin of Error 95%
 
+<center>
+
+![Create calculated field Prop Margin of Error 95%](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_prop_marginoferror_95.jpg){width=30%}
+
+</center>
+
   + Create calculated field for Prop_Lower Limit 95%
 
+<center>
+
+![Create calculated field Prop Lower Limit 95%](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_proplowerlimit_95.jpg){width=30%}
+
+</center>
+
   + Create calculated field for Prop_Upper Limit 95%
+
+<center>
+
+![Create calculated field Prop Upper Limit 95%](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_propupperlimit_95.jpg){width=30%}
+
+</center>
 
   + Move Country to Rows, Prop to Columns
   
   + Change Mark for Props from Automatic (line) to Circle
   
   + Move Measure Values to upper secondary horizontal axis
-![Move Measure Values to upper horizontal axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_measurevalues_upper_axis.jpg)
+  
+<center>
+  
+![Move Measure Values to upper horizontal axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_measurevalues_upper_axis.jpg){width=80%}
+
+</center>
 
   + Edit the filter for Measure Names, and keep only 2 measures: Prop_Lower Limit 95% and Prop_Upper Limit 95%.
-![Add Measure Values, keep only Upper and Lower limit 95%](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_keep_only2measurenames.jpg)
+  
+<center>
+  
+![Add Measure Values, keep only Upper and Lower limit 95%](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_keep_only2measurenames.jpg){width=50%}
+
+</center>
 
   + Move Selected to Filters, and uncheck 'Null' values.
 
   + Change Measure Values from Circle to Line. Press Ctrl+Click and drag measure values to Path and repeat the same to Colour.
-![Change from circle to line, add Measure Names to other roles.](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_measurenames_duplicate.jpg)
+  
+<center>
+  
+![Change from circle to line, add Measure Names to other roles.](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_measurenames_duplicate.jpg){width=20%}
+
+</center>
 
   + Right click on the X axis with a smaller range of values, and select Synchronize axis
-![Synchronize horizontal axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_synchronize_axis.jpg)
+  
+<center>
+  
+![Synchronize horizontal axis](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_synchronize_axis.jpg){width=20%}
+
+</center>
 
   + Under AGG(Prop) mark, change Measure Names from Detail to Colour.
 
   + Change colors of Measure Names (on right side) as required
-![Change colors of Measure Names](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_change_measurename_colors.jpg)
+  
+<center>
+  
+![Change colors of Measure Names](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_change_measurename_colors.jpg){width=40%}
+
+</center>
 
   + Under columns, change the order of Measure Values and AGG(Prop). This allows AGG(Prop) Circle to appear 'in front of' Measure Values Line.
 
@@ -320,10 +379,20 @@ CI_prop.jpg
   + Under Rows, Country, Sort by Field > Prop in descending manner. (similar to the Likert Chart)
 
   + Turn on Animations, and change settings as desired.
-![Turn on, and change Animation settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_animationsettings.jpg)
+  
+<center>
+  
+![Turn on, and change Animation settings](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_animationsettings.jpg){width=20%}
+
+</center>
 
   + Right click on the upper horizontal axis, and uncheck Show Header.
-![Uncheck upper horizontal axis header](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_uncheckshowheader.jpg)
+  
+<center>
+  
+![Uncheck upper horizontal axis header](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/CI_uncheckshowheader.jpg){width=20%}
+
+</center>
 
   + Edit the lower horizontal axis title to "Proportion of "Strongly Agree" responses (with 95% CI bands)"
 
@@ -333,7 +402,11 @@ CI_prop.jpg
 
 *Part 4: Creating the dashboard
 
+<center>
+
 ![Creating the Dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_v1.jpg)
+
+</center>
 
   + 1) Toggle the size of the dashboard to Automatic
   
@@ -342,10 +415,20 @@ CI_prop.jpg
   + 3) Drag in the Confidence Interval Error Bar Chart
   
   + 4) Add the relevant filters for demographics into the dashboard
-![Expose filters on the dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_exposing_filters.jpg)
+  
+<center>
+  
+![Expose filters on the dashboard](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_exposing_filters.jpg){width=40%}
+
+</center>
 
   + 5) Add a text box on the top left, adjust the contents as shown.
-![Add text boxes](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_textbox1_title.jpg)
+  
+<center>
+  
+![Add text boxes](E:/vincentngwk/blog/_posts/2021-02-15-dataviz-makeover-2/dashboard_textbox1_title.jpg){width=50%}
+
+</center>
 
   + 6) Expose the Survey Text parameter and place it on the top right of the dashboard.
   

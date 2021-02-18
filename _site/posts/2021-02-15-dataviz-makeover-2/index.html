@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","CI_animationsettings.jpg","CI_change_measurename_colors.jpg","CI_keep_only2measurenames.jpg","CI_measurenames_duplicate.jpg","CI_measurevalues_upper_axis.jpg","CI_prop.jpg","CI_stronglyagreesinglecount.jpg","CI_synchronize_axis.jpg","CI_uncheckshowheader.jpg","countnegative.jpg","dashboard_exposing_filters.jpg","dashboard_textbox1_title.jpg","dashboard_v1.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","final_tableau_dashboard.jpg","likert_addreferenceline.jpg","likert_change_label_format.jpg","likert_cols_rows.jpg","likert_compute_using_selected.jpg","likert_fields_to_marks_setting.jpg","likert_format_xaxis_topercentage.jpg","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_markto_ganttbar.jpg","likert_percentage.jpg","likert_selected_to_filter.jpg","likert_sort_country_prop.jpg","original_graph.jpg","parameter_surverytext.jpg","remapped_scores_overview.jpg","selected.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg","vac1_score.jpg"]}
+  {"type":"character","attributes":{},"value":["1_import_data_union.JPG","2_hide_data_columns.jpg","3_agegroup.jpg","4_householdsize_group.jpg","changecountryalias.jpg","CI_animationsettings.jpg","CI_change_measurename_colors.jpg","CI_keep_only2measurenames.jpg","CI_measurenames_duplicate.jpg","CI_measurevalues_upper_axis.jpg","CI_prop.jpg","CI_prop_marginoferror_95.jpg","CI_proplowerlimit_95.jpg","CI_propSE.jpg","CI_propupperlimit_95.jpg","CI_stronglyagreesinglecount.jpg","CI_synchronize_axis.jpg","CI_uncheckshowheader.jpg","countnegative.jpg","dashboard_exposing_filters.jpg","dashboard_textbox1_title.jpg","dashboard_v1.jpg","dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/header-attrs-2.6/header-attrs.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","final_tableau_dashboard.jpg","likert_addreferenceline.jpg","likert_change_label_format.jpg","likert_cols_rows.jpg","likert_compute_using_selected.jpg","likert_fields_to_marks_setting.jpg","likert_format_xaxis_topercentage.jpg","likert_ganttpercent.jpg","likert_ganttstart.jpg","likert_markto_ganttbar.jpg","likert_percentage.jpg","likert_selected_to_filter.jpg","likert_sort_country_prop.jpg","original_graph.jpg","parameter_surverytext.jpg","remapped_scores_overview.jpg","selected.jpg","showfilter.jpg","total_count.jpg","totalcountnegative.jpg","vac1_score.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2326,36 +2326,129 @@ document.addEventListener('DOMContentLoaded', function() {
 </figure>
 </center>
 <ul>
-<li><p>Create a calculated field for Prop. We want to find out the proportion of responses which gave “Strongly Agree”. CI_prop.jpg</p></li>
-<li><p>Go back to the Likert chart, and sort Country (rows) by Prop under Field. This allows us to sort in descending order for countries with highest to lowest proportions of responses with “Strongly Agree”. <img src="likert_sort_country_prop.jpg" alt="Sort Country in Likert Chart by Prop" /></p></li>
-<li><p>Create calculated field for Prop SE</p></li>
-<li><p>Create calculated field for Z_95%</p></li>
+<li>Create a calculated field for Prop. We want to find out the proportion of responses which gave “Strongly Agree”.</li>
+</ul>
+<center>
+<figure>
+<img src="CI_prop.jpg" style="width:50.0%" alt="Create calculated field Prop" /><figcaption aria-hidden="true">Create calculated field Prop</figcaption>
+</figure>
+</center>
+<ul>
+<li>Go back to the Likert chart, and sort Country (rows) by Prop under Field. This allows us to sort in descending order for countries with highest to lowest proportions of responses with “Strongly Agree”.</li>
+</ul>
+<center>
+<figure>
+<img src="likert_sort_country_prop.jpg" style="width:30.0%" alt="Sort Country in Likert Chart by Prop" /><figcaption aria-hidden="true">Sort Country in Likert Chart by Prop</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field for Prop SE</li>
+</ul>
+<center>
+<figure>
+<img src="CI_propSE.jpg" style="width:60.0%" alt="Create calculated field PropSE" /><figcaption aria-hidden="true">Create calculated field PropSE</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Create calculated field for Z_95%. It has a constant value of “1.959964”.</p></li>
 <li><p>Create calculated field for Prop_Margin of Error 95%</p></li>
-<li><p>Create calculated field for Prop_Lower Limit 95%</p></li>
-<li><p>Create calculated field for Prop_Upper Limit 95%</p></li>
+</ul>
+<center>
+<figure>
+<img src="CI_prop_marginoferror_95.jpg" style="width:30.0%" alt="Create calculated field Prop Margin of Error 95%" /><figcaption aria-hidden="true">Create calculated field Prop Margin of Error 95%</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field for Prop_Lower Limit 95%</li>
+</ul>
+<center>
+<figure>
+<img src="CI_proplowerlimit_95.jpg" style="width:30.0%" alt="Create calculated field Prop Lower Limit 95%" /><figcaption aria-hidden="true">Create calculated field Prop Lower Limit 95%</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field for Prop_Upper Limit 95%</li>
+</ul>
+<center>
+<figure>
+<img src="CI_propupperlimit_95.jpg" style="width:30.0%" alt="Create calculated field Prop Upper Limit 95%" /><figcaption aria-hidden="true">Create calculated field Prop Upper Limit 95%</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Move Country to Rows, Prop to Columns</p></li>
 <li><p>Change Mark for Props from Automatic (line) to Circle</p></li>
-<li><p>Move Measure Values to upper secondary horizontal axis <img src="CI_measurevalues_upper_axis.jpg" alt="Move Measure Values to upper horizontal axis" /></p></li>
-<li><p>Edit the filter for Measure Names, and keep only 2 measures: Prop_Lower Limit 95% and Prop_Upper Limit 95%. <img src="CI_keep_only2measurenames.jpg" alt="Add Measure Values, keep only Upper and Lower limit 95%" /></p></li>
+<li><p>Move Measure Values to upper secondary horizontal axis</p></li>
+</ul>
+<center>
+<figure>
+<img src="CI_measurevalues_upper_axis.jpg" style="width:80.0%" alt="Move Measure Values to upper horizontal axis" /><figcaption aria-hidden="true">Move Measure Values to upper horizontal axis</figcaption>
+</figure>
+</center>
+<ul>
+<li>Edit the filter for Measure Names, and keep only 2 measures: Prop_Lower Limit 95% and Prop_Upper Limit 95%.</li>
+</ul>
+<center>
+<figure>
+<img src="CI_keep_only2measurenames.jpg" style="width:50.0%" alt="Add Measure Values, keep only Upper and Lower limit 95%" /><figcaption aria-hidden="true">Add Measure Values, keep only Upper and Lower limit 95%</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Move Selected to Filters, and uncheck ‘Null’ values.</p></li>
-<li><p>Change Measure Values from Circle to Line. Press Ctrl+Click and drag measure values to Path and repeat the same to Colour. <img src="CI_measurenames_duplicate.jpg" alt="Change from circle to line, add Measure Names to other roles." /></p></li>
-<li><p>Right click on the X axis with a smaller range of values, and select Synchronize axis <img src="CI_synchronize_axis.jpg" alt="Synchronize horizontal axis" /></p></li>
+<li><p>Change Measure Values from Circle to Line. Press Ctrl+Click and drag measure values to Path and repeat the same to Colour.</p></li>
+</ul>
+<center>
+<figure>
+<img src="CI_measurenames_duplicate.jpg" style="width:20.0%" alt="Change from circle to line, add Measure Names to other roles." /><figcaption aria-hidden="true">Change from circle to line, add Measure Names to other roles.</figcaption>
+</figure>
+</center>
+<ul>
+<li>Right click on the X axis with a smaller range of values, and select Synchronize axis</li>
+</ul>
+<center>
+<figure>
+<img src="CI_synchronize_axis.jpg" style="width:20.0%" alt="Synchronize horizontal axis" /><figcaption aria-hidden="true">Synchronize horizontal axis</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Under AGG(Prop) mark, change Measure Names from Detail to Colour.</p></li>
-<li><p>Change colors of Measure Names (on right side) as required <img src="CI_change_measurename_colors.jpg" alt="Change colors of Measure Names" /></p></li>
+<li><p>Change colors of Measure Names (on right side) as required</p></li>
+</ul>
+<center>
+<figure>
+<img src="CI_change_measurename_colors.jpg" style="width:40.0%" alt="Change colors of Measure Names" /><figcaption aria-hidden="true">Change colors of Measure Names</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Under columns, change the order of Measure Values and AGG(Prop). This allows AGG(Prop) Circle to appear ‘in front of’ Measure Values Line.</p></li>
 <li><p>Change the format of both X-axis to percentage, with 0 decimal points.</p></li>
 <li><p>Change the view from Standard to Entire View</p></li>
 <li><p>Under Rows, Country, Sort by Field &gt; Prop in descending manner. (similar to the Likert Chart)</p></li>
-<li><p>Turn on Animations, and change settings as desired. <img src="CI_animationsettings.jpg" alt="Turn on, and change Animation settings" /></p></li>
-<li><p>Right click on the upper horizontal axis, and uncheck Show Header. <img src="CI_uncheckshowheader.jpg" alt="Uncheck upper horizontal axis header" /></p></li>
+<li><p>Turn on Animations, and change settings as desired.</p></li>
+</ul>
+<center>
+<figure>
+<img src="CI_animationsettings.jpg" style="width:20.0%" alt="Turn on, and change Animation settings" /><figcaption aria-hidden="true">Turn on, and change Animation settings</figcaption>
+</figure>
+</center>
+<ul>
+<li>Right click on the upper horizontal axis, and uncheck Show Header.</li>
+</ul>
+<center>
+<figure>
+<img src="CI_uncheckshowheader.jpg" style="width:20.0%" alt="Uncheck upper horizontal axis header" /><figcaption aria-hidden="true">Uncheck upper horizontal axis header</figcaption>
+</figure>
+</center>
+<ul>
 <li><p>Edit the lower horizontal axis title to “Proportion of”Strongly Agree" responses (with 95% CI bands)"</p></li>
 <li><p>Right click on Country on the vertical axis, and change the font color to black, font size to 9, and Alignment to Centre.</p></li>
 <li><p>Right click on Parameter Survey Text, and select Show Parameter.</p></li>
 </ul>
 <p>*Part 4: Creating the dashboard</p>
+<center>
 <figure>
 <img src="dashboard_v1.jpg" alt="Creating the Dashboard" /><figcaption aria-hidden="true">Creating the Dashboard</figcaption>
 </figure>
+</center>
 <ul>
 <li><ol type="1">
 <li>Toggle the size of the dashboard to Automatic</li>
@@ -2367,11 +2460,25 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>Drag in the Confidence Interval Error Bar Chart</li>
 </ol></li>
 <li><ol start="4" type="1">
-<li>Add the relevant filters for demographics into the dashboard <img src="dashboard_exposing_filters.jpg" alt="Expose filters on the dashboard" /></li>
+<li>Add the relevant filters for demographics into the dashboard</li>
 </ol></li>
+</ul>
+<center>
+<figure>
+<img src="dashboard_exposing_filters.jpg" style="width:40.0%" alt="Expose filters on the dashboard" /><figcaption aria-hidden="true">Expose filters on the dashboard</figcaption>
+</figure>
+</center>
+<ul>
 <li><ol start="5" type="1">
-<li>Add a text box on the top left, adjust the contents as shown. <img src="dashboard_textbox1_title.jpg" alt="Add text boxes" /></li>
+<li>Add a text box on the top left, adjust the contents as shown.</li>
 </ol></li>
+</ul>
+<center>
+<figure>
+<img src="dashboard_textbox1_title.jpg" style="width:50.0%" alt="Add text boxes" /><figcaption aria-hidden="true">Add text boxes</figcaption>
+</figure>
+</center>
+<ul>
 <li><ol start="6" type="1">
 <li>Expose the Survey Text parameter and place it on the top right of the dashboard.</li>
 </ol></li>
