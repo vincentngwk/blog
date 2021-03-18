@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # 1.0 - Critique and recommendations
-Critique the interactive data visualization from its clarity, aesthetics and interactivity. At least 2 from each evaluation criterion.
+Critique the interactive data visualization from its clarity, aesthetics and interactivity.
 
 <center>
 
@@ -69,6 +69,11 @@ The original dataset can be found here: https://acleddata.com/#/dashboard
 # 3.0 - The final visualization
 Using Tableau, design the proposed data visualization.
 
+<center>
+
+![Final designed dashboard](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/final_tableau_dashboard.jpg){width=100%}
+
+</center>
 
 
 
@@ -105,10 +110,43 @@ Provide step-by-step description on how the data visualization was prepared.
 
 </center>
 
-  + 
+  + Create calculated field: Days with events. This counts the unique number of calendar days in the period which had events.
 
+<center>
 
+![Create calculated field: Days with events](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/CF_days_with_events.jpg){width=100%}
 
+</center>
+
+  + Create calculated field: % Proportion of days with events. This provides us with a ratio of how often there were events happening during the selected period. Go on to change the number formatting to Percentage, with 0 decimal points.
+
+<center>
+
+![Create calculated field: % Proportion of days with events](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/CF_pct_proportion_of_days_with_events.jpg){width=100%}
+
+</center>
+
+<center>
+
+![Change number formatting to percentage](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/NUMFORMAT_pct_prop_dayswithevents.jpg){width=100%}
+
+</center>
+
+  + Create calculated field: Average Events per Calendar Day. This provides us with the average number of events per Calendar day in the chosen period.
+  
+<center>
+
+![Create calculated fied: Average Events per Calendar Day](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/CF_avg_events_per_calendar_day.jpg){width=100%}
+
+</center>
+
+  + Create calculated field: Average Fatalities per Calendar Day. This provides us with the average number of fatalities per Calendar day in the chosen period.
+  
+<center>
+
+![Create calculated fied: Average Fatalities per Calendar Day](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/CF_avg_fatalities_per_calendar_day.jpg){width=100%}
+
+</center>
 
 
 

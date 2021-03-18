@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["~$DVZM3_supporting_pictures.pptx","CF_numberof_calendar_days.jpg","CF_selected_impact_type.jpg","create_parameter.jpg","datavizmakeover-3_files/anchor-4.2.2/anchor.min.js","datavizmakeover-3_files/bowser-1.9.3/bowser.min.js","datavizmakeover-3_files/distill-2.2.21/template.v2.js","datavizmakeover-3_files/header-attrs-2.6/header-attrs.js","datavizmakeover-3_files/jquery-1.11.3/jquery.min.js","datavizmakeover-3_files/popper-2.6.0/popper.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover-3_files/tippy-6.2.7/tippy.css","datavizmakeover-3_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover-3_files/webcomponents-2.0.0/webcomponents.js","DVZM3_supporting_pictures.pptx","original_visualization.jpg"]}
+  {"type":"character","attributes":{},"value":["~$DVZM3_supporting_pictures.pptx","CF_avg_events_per_calendar_day.jpg","CF_avg_fatalities_per_calendar_day.jpg","CF_days_with_events.jpg","CF_numberof_calendar_days.jpg","CF_pct_proportion_of_days_with_events.jpg","CF_selected_impact_type.jpg","create_parameter.jpg","datavizmakeover-3_files/anchor-4.2.2/anchor.min.js","datavizmakeover-3_files/bowser-1.9.3/bowser.min.js","datavizmakeover-3_files/distill-2.2.21/template.v2.js","datavizmakeover-3_files/header-attrs-2.6/header-attrs.js","datavizmakeover-3_files/jquery-1.11.3/jquery.min.js","datavizmakeover-3_files/popper-2.6.0/popper.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover-3_files/tippy-6.2.7/tippy.css","datavizmakeover-3_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover-3_files/webcomponents-2.0.0/webcomponents.js","DVZM3_supporting_pictures.pptx","final_tableau_dashboard.jpg","NUMFORMAT_pct_prop_dayswithevents.jpg","original_visualization.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1498,7 +1498,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </nav>
 </div>
 <h1 id="critique-and-recommendations">1.0 - Critique and recommendations</h1>
-<p>Critique the interactive data visualization from its clarity, aesthetics and interactivity. At least 2 from each evaluation criterion.</p>
+<p>Critique the interactive data visualization from its clarity, aesthetics and interactivity.</p>
 <center>
 <figure>
 <img src="original_visualization.jpg" style="width:100.0%" alt="Original Graph Given" /><figcaption aria-hidden="true">Original Graph Given</figcaption>
@@ -1610,6 +1610,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </center>
 <h1 id="the-final-visualization">3.0 - The final visualization</h1>
 <p>Using Tableau, design the proposed data visualization.</p>
+<center>
+<figure>
+<img src="final_tableau_dashboard.jpg" style="width:100.0%" alt="Final designed dashboard" /><figcaption aria-hidden="true">Final designed dashboard</figcaption>
+</figure>
+</center>
 <h1 id="steps-to-create-the-visualization">4.0 - Steps to create the visualization</h1>
 <p>Provide step-by-step description on how the data visualization was prepared.</p>
 <h3 id="part-1-preparing-the-data-and-fields-required">Part 1: Preparing the data and fields required</h3>
@@ -1640,8 +1645,42 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </figure>
 </center>
 <ul>
-<li></li>
+<li>Create calculated field: Days with events. This counts the unique number of calendar days in the period which had events.</li>
 </ul>
+<center>
+<figure>
+<img src="CF_days_with_events.jpg" style="width:100.0%" alt="Create calculated field: Days with events" /><figcaption aria-hidden="true">Create calculated field: Days with events</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: % Proportion of days with events. This provides us with a ratio of how often there were events happening during the selected period. Go on to change the number formatting to Percentage, with 0 decimal points.</li>
+</ul>
+<center>
+<figure>
+<img src="CF_pct_proportion_of_days_with_events.jpg" style="width:100.0%" alt="Create calculated field: % Proportion of days with events" /><figcaption aria-hidden="true">Create calculated field: % Proportion of days with events</figcaption>
+</figure>
+</center>
+<center>
+<figure>
+<img src="NUMFORMAT_pct_prop_dayswithevents.jpg" style="width:100.0%" alt="Change number formatting to percentage" /><figcaption aria-hidden="true">Change number formatting to percentage</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Average Events per Calendar Day. This provides us with the average number of events per Calendar day in the chosen period.</li>
+</ul>
+<center>
+<figure>
+<img src="CF_avg_events_per_calendar_day.jpg" style="width:100.0%" alt="Create calculated fied: Average Events per Calendar Day" /><figcaption aria-hidden="true">Create calculated fied: Average Events per Calendar Day</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Average Fatalities per Calendar Day. This provides us with the average number of fatalities per Calendar day in the chosen period.</li>
+</ul>
+<center>
+<figure>
+<img src="CF_avg_fatalities_per_calendar_day.jpg" style="width:100.0%" alt="Create calculated fied: Average Fatalities per Calendar Day" /><figcaption aria-hidden="true">Create calculated fied: Average Fatalities per Calendar Day</figcaption>
+</figure>
+</center>
 <h1 id="insights-revealed">5.0 - Insights revealed</h1>
 <p>Describe five major observations revealed by the data visualization prepared.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
