@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/2021-03-18-datavizmakeover-3/",
-    "title": "DataVizMakeover 3",
+    "title": "DataViz Makeover 3",
     "description": "DataViz Makeover 3 provides a do-over for an existing data visualisation created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries.",
     "author": [
       {
@@ -11,9 +11,9 @@
     ],
     "date": "2021-03-18",
     "categories": [],
-    "contents": "\r\n\r\nContents\r\n1.0 Section A\r\n2.0 Section B\r\n3.0 Section C\r\n4.0 Section D\r\n5.0 Section E\r\n\r\n1.0 Section A\r\nCritique the interactive data visualisation from its clarity, aesthetics and interactivity. At least 2 from each evaluation criterion.\r\n2.0 Section B\r\nSuggest alternative data visualisation and interactive techniques to improve the current design.\r\n3.0 Section C\r\nUsing Tableau, design the proposed data visualization.\r\n4.0 Section D\r\nProvide step-by-step description on how the data visualization was prepared.\r\n5.0 Section E\r\nDescribe five major observations revealed by the data visualization prepared.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\nContents\r\n1.0 Section A\r\n1.1 Clarity\r\n1.2 Aesthetics\r\n1.3 Interactivity\r\n\r\n2.0 Section B\r\n3.0 Section C\r\n4.0 Section D\r\n5.0 Section E\r\n\r\n1.0 Section A\r\nCritique the interactive data visualisation from its clarity, aesthetics and interactivity. At least 2 from each evaluation criterion.\r\n1.1 Clarity\r\nS/N\r\nComments\r\nSuggested Improvements\r\nC1\r\nRegarding the points plotted on the map visual, it is not clear if it represents the number of events, or the number of fatalities.\r\nIndicate explicitly in the title of the map visual whether the data being visualized refers to number of events or fatalities.\r\nC2\r\nThe datapoints plotted on the map are of constant size, which does not provide much information on the scale or impact of the event.\r\nScale the size of the points by the value, whether it is the number of events or fatalities.\r\nC3\r\nWhile the various line plots help to denote the trend across the years, users are not able to gauge the breakdown of the scale of various events in relation to each other.\r\nTo plot the various event types on a single plot. This allows users to have a sense of which events are major and minor contributors across the time period.\r\n1.2 Aesthetics\r\nS/N\r\nComments\r\nSuggested Improvements\r\nA1\r\nFor the various data points on the map, it is unclear if that specific event had any fatalities or not.\r\nIntroduce point symbols, where a circle denotes an event without any fatalities, and a cross denotes the presence of fatalities for that recorded event.\r\nA2\r\nThere are no vertical gridlines present on the line plot. When more years are selected, this could make it tougher for the user to interpret the chart.\r\nAdd dotted vertical grid lines to aid the user in interpreting the chart, especially when making sense of the trend across many years.\r\nA3\r\n\r\nXXX\r\n1.3 Interactivity\r\nS/N\r\nComments\r\nSuggested Improvements\r\nI1\r\nXXX.\r\nXXX.\r\nI2\r\nXXX.\r\nXXX.\r\nI3\r\nXXX\r\nXXX\r\n2.0 Section B\r\nSuggest alternative data visualisation and interactive techniques to improve the current design.\r\n3.0 Section C\r\nUsing Tableau, design the proposed data visualization.\r\n4.0 Section D\r\nProvide step-by-step description on how the data visualization was prepared.\r\n5.0 Section E\r\nDescribe five major observations revealed by the data visualization prepared.\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-03-18T17:07:07+08:00",
+    "last_modified": "2021-03-18T17:43:13+08:00",
     "input_file": "datavizmakeover-3.utf8.md"
   },
   {
