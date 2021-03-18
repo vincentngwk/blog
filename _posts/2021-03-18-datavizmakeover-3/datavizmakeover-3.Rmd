@@ -1,0 +1,62 @@
+---
+title: "DataVizMakeover 3"
+description: |
+  DataViz Makeover 3 provides a do-over for an existing data visualisation created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries.
+author:
+  - name: Ng Wee Kien (Vincent)
+    url: https://www.linkedin.com/in/ngweekiensg/
+date: 03-18-2021
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# 1.0 Section A
+Critique the interactive data visualisation from its clarity, aesthetics and interactivity. At least 2 from each evaluation criterion.
+
+
+
+# 2.0 Section B
+Suggest alternative data visualisation and interactive techniques to improve the current design. 
+
+
+
+# 3.0 Section C
+Using Tableau, design the proposed data visualization.
+
+
+
+
+# 4.0 Section D
+Provide step-by-step description on how the data visualization was prepared.
+
+
+
+
+# 5.0 Section E
+Describe five major observations revealed by the data visualization prepared.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
