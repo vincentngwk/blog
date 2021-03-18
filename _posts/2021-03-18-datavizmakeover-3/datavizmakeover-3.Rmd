@@ -71,7 +71,7 @@ Using Tableau, design the proposed data visualization.
 
 <center>
 
-![Final designed dashboard](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/final_tableau_dashboard.jpg){width=100%}
+![Final designed dashboard](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/final_tableau_dashboard.jpg){width=75%}
 
 </center>
 
@@ -315,7 +315,21 @@ Provide step-by-step description on how the data visualization was prepared.
 
   + Drag in Text boxes on the bottom left and bottom right to input the Source and References
 
-  + save and publish to Tableau Public Server
+  + Save and publish to Tableau Public Server
+
+
+<center>
+
+![Final designed dashboard](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/final_tableau_dashboard.jpg){width=75%}
+
+</center>
+
+<center>
+
+![Final designed dashboard with tooltip](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/Final_Dashboard_tooltip_SS.jpg){width=75%}
+
+</center>
+
 
 
 
