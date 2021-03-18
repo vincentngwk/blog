@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["~$DVZM3_supporting_pictures.pptx","CF_avg_events_per_calendar_day.jpg","CF_avg_fatalities_per_calendar_day.jpg","CF_days_with_events.jpg","CF_numberof_calendar_days.jpg","CF_pct_proportion_of_days_with_events.jpg","CF_selected_impact_type.jpg","create_parameter.jpg","datavizmakeover-3_files/anchor-4.2.2/anchor.min.js","datavizmakeover-3_files/bowser-1.9.3/bowser.min.js","datavizmakeover-3_files/distill-2.2.21/template.v2.js","datavizmakeover-3_files/header-attrs-2.6/header-attrs.js","datavizmakeover-3_files/jquery-1.11.3/jquery.min.js","datavizmakeover-3_files/popper-2.6.0/popper.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover-3_files/tippy-6.2.7/tippy.css","datavizmakeover-3_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover-3_files/webcomponents-2.0.0/webcomponents.js","DVZM3_supporting_pictures.pptx","final_tableau_dashboard.jpg","NUMFORMAT_pct_prop_dayswithevents.jpg","original_visualization.jpg"]}
+  {"type":"character","attributes":{},"value":["~$DVZM3_supporting_pictures.pptx","CF_1or2_sided_event.jpg","CF_avg_events_per_calendar_day.jpg","CF_avg_fatalities_per_calendar_day.jpg","CF_days_with_events.jpg","CF_fatalities_present_shape.jpg","CF_numberof_calendar_days.jpg","CF_pct_proportion_of_days_with_events.jpg","CF_selected_impact_type.jpg","create_parameter.jpg","datavizmakeover-3_files/anchor-4.2.2/anchor.min.js","datavizmakeover-3_files/bowser-1.9.3/bowser.min.js","datavizmakeover-3_files/distill-2.2.21/template.v2.js","datavizmakeover-3_files/header-attrs-2.6/header-attrs.js","datavizmakeover-3_files/jquery-1.11.3/jquery.min.js","datavizmakeover-3_files/popper-2.6.0/popper.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover-3_files/tippy-6.2.7/tippy.css","datavizmakeover-3_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover-3_files/webcomponents-2.0.0/webcomponents.js","DVZM3_supporting_pictures.pptx","FACT_create_dynamic_title.jpg","filters_apply_to_all.jpg","Final_dashboard_arrangement.jpg","Final_dashboard_filter_settings.jpg","final_tableau_dashboard.jpg","LG_color_shape_pointer.jpg","LG_dynamic_title.jpg","LG_line_pointer.jpg","LG_visualization.jpg","MAP_edit_dynamic_title.jpg","MAP_edit_shape.jpg","MAP_visualization.jpg","NUMFORMAT_pct_prop_dayswithevents.jpg","original_visualization.jpg","TT_country_sort_order.jpg","TT_edit_LG_tooltip.jpg","TT_visualization.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1492,6 +1492,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#steps-to-create-the-visualization">4.0 - Steps to create the visualization</a>
 <ul>
 <li><a href="#part-1-preparing-the-data-and-fields-required">Part 1: Preparing the data and fields required</a></li>
+<li><a href="#part-2-creating-the-facts-segment">Part 2: Creating the Facts segment</a></li>
+<li><a href="#part-3-creating-the-map-visualization">Part 3: Creating the Map visualization</a></li>
+<li><a href="#part-4-creating-the-line-graph-visualization">Part 4: Creating the Line Graph visualization</a></li>
+<li><a href="#part-5-creating-the-tooltip-visualization">Part 5: Creating the Tooltip visualization</a></li>
+<li><a href="#part-6-creating-the-dashboard">Part 6: Creating the Dashboard</a></li>
 </ul></li>
 <li><a href="#insights-revealed">5.0 - Insights revealed</a></li>
 </ul>
@@ -1615,6 +1620,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <img src="final_tableau_dashboard.jpg" style="width:100.0%" alt="Final designed dashboard" /><figcaption aria-hidden="true">Final designed dashboard</figcaption>
 </figure>
 </center>
+<p>Go to the following link for the live Tableau dashboard: <a href="https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DataVizMakeover3_16160632810700/ArmedConflictDashboard?publish=yes" class="uri">https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DataVizMakeover3_16160632810700/ArmedConflictDashboard?publish=yes</a></p>
 <h1 id="steps-to-create-the-visualization">4.0 - Steps to create the visualization</h1>
 <p>Provide step-by-step description on how the data visualization was prepared.</p>
 <h3 id="part-1-preparing-the-data-and-fields-required">Part 1: Preparing the data and fields required</h3>
@@ -1681,8 +1687,164 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <img src="CF_avg_fatalities_per_calendar_day.jpg" style="width:100.0%" alt="Create calculated fied: Average Fatalities per Calendar Day" /><figcaption aria-hidden="true">Create calculated fied: Average Fatalities per Calendar Day</figcaption>
 </figure>
 </center>
+<ul>
+<li>Create calculated field: Fatalities Present Shape. This will be used for point symbols in the map visual later, with values of 1 indicating fatalities were present in that event, and 0 otherwise.</li>
+</ul>
+<center>
+<figure>
+<img src="CF_fatalities_present_shape.jpg" style="width:100.0%" alt="Create calculated fied: Fatalities Present Shape" /><figcaption aria-hidden="true">Create calculated fied: Fatalities Present Shape</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: 1 or 2 sided event. This will be used as a filter later, where the presence of Actor2 indicates it was a 2-sided event, and 1-sided otherwise.</li>
+</ul>
+<center>
+<figure>
+<img src="CF_1or2_sided_event.jpg" style="width:100.0%" alt="Create calculated fied: 1 or 2 sided event" /><figcaption aria-hidden="true">Create calculated fied: 1 or 2 sided event</figcaption>
+</figure>
+</center>
+<h3 id="part-2-creating-the-facts-segment">Part 2: Creating the Facts segment</h3>
+<ul>
+<li><p>Create a new worksheet called Facts. This will be used to provide some dynamic key statistics on our dashboard subsequently.</p></li>
+<li><p>Create a dynamic title by inserting various calculated fields, and wrapping a narrative around it. This allows users to easily see key statistics.</p></li>
+</ul>
+<center>
+<figure>
+<img src="FACT_create_dynamic_title.jpg" style="width:100.0%" alt="Create calculated fied: 1 or 2 sided event" /><figcaption aria-hidden="true">Create calculated fied: 1 or 2 sided event</figcaption>
+</figure>
+</center>
+<h3 id="part-3-creating-the-map-visualization">Part 3: Creating the Map visualization</h3>
+<center>
+<figure>
+<img src="MAP_visualization.jpg" style="width:100.0%" alt="Creating the Map Visualization" /><figcaption aria-hidden="true">Creating the Map Visualization</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Check that Longitude and Latitude have been assigned to their respective Geographic roles. This can be done by right clicking on each variable.</p></li>
+<li><p>Drag Longitude to Columns, and Latitude to Rows. Ensure they are both set to Measure(Average).</p></li>
+<li><p>Drag Country, Event Type, 1 or 2 sided event to Filters.</p></li>
+<li><p>Drag Event Date to Filter, and select YEAR, select all for the respective options.</p></li>
+<li><p>Right click on each of the filters and apply to all worksheets using this data source. For each of the filters, also click on “Show Filter”</p></li>
+</ul>
+<center>
+<figure>
+<img src="filters_apply_to_all.jpg" style="width:100.0%" alt="Apply the filters to all worksheets using this data source" /><figcaption aria-hidden="true">Apply the filters to all worksheets using this data source</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Change the Marks from Automatic to Shape</p></li>
+<li><p>Drag Event Type to Colour</p></li>
+<li><p>Drag Fatalities Present Shape to Shape, right click and customize the shape and fill.</p></li>
+</ul>
+<center>
+<figure>
+<img src="MAP_edit_shape.jpg" style="width:50.0%" alt="Customizing the shapes" /><figcaption aria-hidden="true">Customizing the shapes</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Drag Selected Impact Type to Size, ensure that the measure is set to Sum.</p></li>
+<li><p>Drag Event Id Cnty to Detail</p></li>
+<li><p>Drag to Tooltip the following variables: Admin1, Notes, Event Date, Actor1, Actor 2</p></li>
+<li><p>Right click on the Parameter “Conflict Impact Type”, and select Show Parameter</p></li>
+<li><p>Edit the title of the Map visualization to insert various fields. Edit the formatting to make certain fields stand out visually.</p></li>
+</ul>
+<center>
+<figure>
+<img src="MAP_edit_dynamic_title.jpg" style="width:50.0%" alt="Edit the dynamic title of Map" /><figcaption aria-hidden="true">Edit the dynamic title of Map</figcaption>
+</figure>
+</center>
+<h3 id="part-4-creating-the-line-graph-visualization">Part 4: Creating the Line Graph visualization</h3>
+<center>
+<figure>
+<img src="LG_visualization.jpg" style="width:75.0%" alt="Line Graph visualization" /><figcaption aria-hidden="true">Line Graph visualization</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Create a new worksheet called Line Graph</p></li>
+<li><p>Drag Event Date to Columns, and Selected Impact Type to Rows</p></li>
+<li><p>Drag Event Type to COlour</p></li>
+<li><p>Select Lines (Discrete) under “Show Me” on the top right, and ensure that under Marks, it is set to Line</p></li>
+<li><p>Ensure that under Color, the pointer is set to All</p></li>
+</ul>
+<center>
+<figure>
+<img src="LG_color_shape_pointer.jpg" style="width:25.0%" alt="Line Graph Path" /><figcaption aria-hidden="true">Line Graph Path</figcaption>
+</figure>
+</center>
+<ul>
+<li>Edit the title to be dynamic, edit the formatting to make certain fields stand out visually.</li>
+</ul>
+<center>
+<figure>
+<img src="LG_dynamic_title.jpg" style="width:75.0%" alt="Line Graph Dynamic Title" /><figcaption aria-hidden="true">Line Graph Dynamic Title</figcaption>
+</figure>
+</center>
+<h3 id="part-5-creating-the-tooltip-visualization">Part 5: Creating the Tooltip visualization</h3>
+<center>
+<figure>
+<img src="TT_visualization.jpg" style="width:75.0%" alt="Tooltip visualization" /><figcaption aria-hidden="true">Tooltip visualization</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Create a new worksheet called Tooltip. This will be embedded and used as a tooltip visualization for other visualizations.</p></li>
+<li><p>Drag Selected Impact Type to Columns, and Country to Rows</p></li>
+<li><p>Right click on Country in Rows, and specify the sort order to be by Selected Impact Type, descending.</p></li>
+</ul>
+<center>
+<figure>
+<img src="TT_country_sort_order.jpg" style="width:50.0%" alt="Update Country Sort Order" /><figcaption aria-hidden="true">Update Country Sort Order</figcaption>
+</figure>
+</center>
+<ul>
+<li>Go to Line Graph worksheet, and double-click on Tooltip, and update it to insert the visualization in the newly created Tooltip worksheet as follows.</li>
+</ul>
+<center>
+<figure>
+<img src="TT_edit_LG_tooltip.jpg" style="width:65.0%" alt="Update tooltip in Line Graph worksheet" /><figcaption aria-hidden="true">Update tooltip in Line Graph worksheet</figcaption>
+</figure>
+</center>
+<h3 id="part-6-creating-the-dashboard">Part 6: Creating the Dashboard</h3>
+<center>
+<figure>
+<img src="Final_dashboard_arrangement.jpg" style="width:90.0%" alt="Final Dashboard Arrangement" /><figcaption aria-hidden="true">Final Dashboard Arrangement</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Create a dashboard called Armed Conflict Dashboard</p></li>
+<li><p>Pull in the Map on the left, Line Graph on the bottom right, Facts (the key statistics) on the top right</p></li>
+<li><p>Re-arrange the filters accordingly, and change them to dropdown lists</p></li>
+</ul>
+<center>
+<figure>
+<img src="Final_dashboard_filter_settings.jpg" style="width:20.0%" alt="Filter dropdown list" /><figcaption aria-hidden="true">Filter dropdown list</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Drag in Text boxes on the bottom left and bottom right to input the Source and References</p></li>
+<li><p>save and publish to Tableau Public Server</p></li>
+</ul>
 <h1 id="insights-revealed">5.0 - Insights revealed</h1>
 <p>Describe five major observations revealed by the data visualization prepared.</p>
+<ul>
+<li>Insight 1:</li>
+</ul>
+<p>XXX</p>
+<ul>
+<li>Insight 2:</li>
+</ul>
+<p>XXX</p>
+<ul>
+<li>Insight 3:</li>
+</ul>
+<p>XXX</p>
+<ul>
+<li>Insight 4:</li>
+</ul>
+<p>XXX</p>
+<ul>
+<li>Insight 5:</li>
+</ul>
+<p>XXX</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

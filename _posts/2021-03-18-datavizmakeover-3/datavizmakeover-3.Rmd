@@ -76,6 +76,8 @@ Using Tableau, design the proposed data visualization.
 </center>
 
 
+Go to the following link for the live Tableau dashboard: https://public.tableau.com/profile/ng.wee.kien#!/vizhome/DataVizMakeover3_16160632810700/ArmedConflictDashboard?publish=yes
+
 
 # 4.0 - Steps to create the visualization
 Provide step-by-step description on how the data visualization was prepared.
@@ -148,16 +150,201 @@ Provide step-by-step description on how the data visualization was prepared.
 
 </center>
 
+  + Create calculated field: Fatalities Present Shape. This will be used for point symbols in the map visual later, with values of 1 indicating fatalities were present in that event, and 0 otherwise.
+  
+<center>
+
+![Create calculated fied: Fatalities Present Shape](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/CF_fatalities_present_shape.jpg){width=100%}
+
+</center>
+
+  + Create calculated field: 1 or 2 sided event. This will be used as a filter later, where the presence of Actor2 indicates it was a 2-sided event, and 1-sided otherwise.
+  
+<center>
+
+![Create calculated fied: 1 or 2 sided event](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/CF_1or2_sided_event.jpg){width=100%}
+
+</center>
+
+### Part 2: Creating the Facts segment
+
+  + Create a new worksheet called Facts. This will be used to provide some dynamic key statistics on our dashboard subsequently.
+
+  + Create a dynamic title by inserting various calculated fields, and wrapping a narrative around it. This allows users to easily see key statistics.
+  
+<center>
+
+![Create calculated fied: 1 or 2 sided event](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/FACT_create_dynamic_title.jpg){width=100%}
+
+</center>
+
+### Part 3: Creating the Map visualization
+
+<center>
+
+![Creating the Map Visualization](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/MAP_visualization.jpg){width=100%}
+
+</center>
+
+  + Check that Longitude and Latitude have been assigned to their respective Geographic roles. This can be done by right clicking on each variable.
+  
+  + Drag Longitude to Columns, and Latitude to Rows. Ensure they are both set to Measure(Average).
+
+  + Drag Country, Event Type, 1 or 2 sided event to Filters.
+  
+  + Drag Event Date to Filter, and select YEAR, select all for the respective options.
+
+  + Right click on each of the filters and apply to all worksheets using this data source. For each of the filters, also click on "Show Filter"
+
+<center>
+
+![Apply the filters to all worksheets using this data source](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/filters_apply_to_all.jpg){width=100%}
+
+</center>
+
+  + Change the Marks from Automatic to Shape
+  
+  + Drag Event Type to Colour
+  
+  + Drag Fatalities Present Shape to Shape, right click and customize the shape and fill.
+
+<center>
+
+![Customizing the shapes](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/MAP_edit_shape.jpg){width=50%}
+
+</center>
+
+  + Drag Selected Impact Type to Size, ensure that the measure is set to Sum.
+
+  + Drag Event Id Cnty to Detail
+  
+  + Drag to Tooltip the following variables: Admin1, Notes, Event Date, Actor1, Actor 2
+  
+  + Right click on the Parameter "Conflict Impact Type", and select Show Parameter
+  
+  + Edit the title of the Map visualization to insert various fields. Edit the formatting to make certain fields stand out visually.
+
+<center>
+
+![Edit the dynamic title of Map](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/MAP_edit_dynamic_title.jpg){width=50%}
+
+</center>
+
+
+### Part 4: Creating the Line Graph visualization
+
+<center>
+
+![Line Graph visualization](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/LG_visualization.jpg){width=75%}
+
+</center>
+
+  + Create a new worksheet called Line Graph
+
+  + Drag Event Date to Columns, and Selected Impact Type to Rows
+  
+  + Drag Event Type to COlour
+  
+  + Select Lines (Discrete) under "Show Me" on the top right, and ensure that under Marks, it is set to Line
+  
+  + Ensure that under Color, the pointer is set to All
+
+<center>
+
+![Line Graph Path](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/LG_color_shape_pointer.jpg){width=25%}
+
+</center>
+
+  + Edit the title to be dynamic, edit the formatting to make certain fields stand out visually.
+  
+<center>
+
+![Line Graph Dynamic Title](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/LG_dynamic_title.jpg){width=75%}
+
+</center>
+
+
+### Part 5: Creating the Tooltip visualization
+
+<center>
+
+![Tooltip visualization](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/TT_visualization.jpg){width=75%}
+
+</center>
+
+  + Create a new worksheet called Tooltip. This will be embedded and used as a tooltip visualization for other visualizations.
+  
+  + Drag Selected Impact Type to Columns, and Country to Rows
+  
+  + Right click on Country in Rows, and specify the sort order to be by Selected Impact Type, descending.
+
+<center>
+
+![Update Country Sort Order](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/TT_country_sort_order.jpg){width=50%}
+
+</center>
+
+  + Go to Line Graph worksheet, and double-click on Tooltip, and update it to insert the visualization in the newly created Tooltip worksheet as follows.
+  
+<center>
+
+![Update tooltip in Line Graph worksheet](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/TT_edit_LG_tooltip.jpg){width=65%}
+
+</center>
+
+
+### Part 6: Creating the Dashboard
+
+<center>
+
+![Final Dashboard Arrangement](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/Final_dashboard_arrangement.jpg){width=90%}
+
+</center>
+
+  + Create a dashboard called Armed Conflict Dashboard
+
+  + Pull in the Map on the left, Line Graph on the bottom right, Facts (the key statistics) on the top right
+  
+  + Re-arrange the filters accordingly, and change them to dropdown lists
+
+<center>
+
+![Filter dropdown list](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/Final_dashboard_filter_settings.jpg){width=20%}
+
+</center>
+
+  + Drag in Text boxes on the bottom left and bottom right to input the Source and References
+
+  + save and publish to Tableau Public Server
+
 
 
 # 5.0 - Insights revealed
 Describe five major observations revealed by the data visualization prepared.
 
+  + Insight 1:
+  
+  XXX
 
 
+  + Insight 2:
+  
+  XXX
 
 
+  + Insight 3:
+  
+  XXX
 
+
+  + Insight 4:
+  
+  XXX
+
+
+  + Insight 5:
+  
+  XXX
 
 
 
