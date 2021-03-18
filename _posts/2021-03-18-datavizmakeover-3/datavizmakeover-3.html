@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["datavizmakeover-3_files/anchor-4.2.2/anchor.min.js","datavizmakeover-3_files/bowser-1.9.3/bowser.min.js","datavizmakeover-3_files/distill-2.2.21/template.v2.js","datavizmakeover-3_files/header-attrs-2.6/header-attrs.js","datavizmakeover-3_files/jquery-1.11.3/jquery.min.js","datavizmakeover-3_files/popper-2.6.0/popper.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover-3_files/tippy-6.2.7/tippy.css","datavizmakeover-3_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover-3_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["~$DVZM3_supporting_pictures.pptx","CF_numberof_calendar_days.jpg","CF_selected_impact_type.jpg","create_parameter.jpg","datavizmakeover-3_files/anchor-4.2.2/anchor.min.js","datavizmakeover-3_files/bowser-1.9.3/bowser.min.js","datavizmakeover-3_files/distill-2.2.21/template.v2.js","datavizmakeover-3_files/header-attrs-2.6/header-attrs.js","datavizmakeover-3_files/jquery-1.11.3/jquery.min.js","datavizmakeover-3_files/popper-2.6.0/popper.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","datavizmakeover-3_files/tippy-6.2.7/tippy-light-border.css","datavizmakeover-3_files/tippy-6.2.7/tippy.css","datavizmakeover-3_files/tippy-6.2.7/tippy.umd.min.js","datavizmakeover-3_files/webcomponents-2.0.0/webcomponents.js","DVZM3_supporting_pictures.pptx","original_visualization.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1481,21 +1481,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#section-a">1.0 Section A</a>
+<li><a href="#critique-and-recommendations">1.0 - Critique and recommendations</a>
 <ul>
 <li><a href="#clarity">1.1 Clarity</a></li>
 <li><a href="#aesthetics">1.2 Aesthetics</a></li>
 <li><a href="#interactivity">1.3 Interactivity</a></li>
 </ul></li>
-<li><a href="#section-b">2.0 Section B</a></li>
-<li><a href="#section-c">3.0 Section C</a></li>
-<li><a href="#section-d">4.0 Section D</a></li>
-<li><a href="#section-e">5.0 Section E</a></li>
+<li><a href="#the-proposed-visualization">2.0 - The proposed visualization</a></li>
+<li><a href="#the-final-visualization">3.0 - The final visualization</a></li>
+<li><a href="#steps-to-create-the-visualization">4.0 - Steps to create the visualization</a>
+<ul>
+<li><a href="#part-1-preparing-the-data-and-fields-required">Part 1: Preparing the data and fields required</a></li>
+</ul></li>
+<li><a href="#insights-revealed">5.0 - Insights revealed</a></li>
 </ul>
 </nav>
 </div>
-<h1 id="section-a">1.0 Section A</h1>
-<p>Critique the interactive data visualisation from its clarity, aesthetics and interactivity. At least 2 from each evaluation criterion.</p>
+<h1 id="critique-and-recommendations">1.0 - Critique and recommendations</h1>
+<p>Critique the interactive data visualization from its clarity, aesthetics and interactivity. At least 2 from each evaluation criterion.</p>
+<center>
+<figure>
+<img src="original_visualization.jpg" style="width:100.0%" alt="Original Graph Given" /><figcaption aria-hidden="true">Original Graph Given</figcaption>
+</figure>
+</center>
 <h3 id="clarity">1.1 Clarity</h3>
 <table>
 <colgroup>
@@ -1526,6 +1534,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <td>While the various line plots help to denote the trend across the years, users are not able to gauge the breakdown of the scale of various events in relation to each other.</td>
 <td>To plot the various event types on a single plot. This allows users to have a sense of which events are major and minor contributors across the time period.</td>
 </tr>
+<tr class="even">
+<td>C4</td>
+<td>The source of data and any references are not cited.</td>
+<td>Include the citations and references at the bottom of the dashboard.</td>
+</tr>
+<tr class="odd">
+<td>C5</td>
+<td>While the user is able to self-explore and find certain granular insights, there is a lack of ‘big picture’ statistics available to provide some context.</td>
+<td>Include high-level key statistics based on the filters applied on the dashboard.</td>
+</tr>
 </tbody>
 </table>
 <h3 id="aesthetics">1.2 Aesthetics</h3>
@@ -1553,15 +1571,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <td>There are no vertical gridlines present on the line plot. When more years are selected, this could make it tougher for the user to interpret the chart.</td>
 <td>Add dotted vertical grid lines to aid the user in interpreting the chart, especially when making sense of the trend across many years.</td>
 </tr>
-<tr class="odd">
-<td>A3</td>
-<td></td>
-<td>XXX</td>
-</tr>
 </tbody>
 </table>
 <h3 id="interactivity">1.3 Interactivity</h3>
 <table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 39%" />
+<col style="width: 53%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>S/N</th>
@@ -1572,28 +1590,59 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <tbody>
 <tr class="odd">
 <td>I1</td>
-<td>XXX.</td>
-<td>XXX.</td>
+<td>Apart from some basic filters, the view is rather static. Users are unable to change the visualization based on other factors.</td>
+<td>Include parameters and other filters for users to be able to play around and explore further.</td>
 </tr>
 <tr class="even">
 <td>I2</td>
-<td>XXX.</td>
-<td>XXX.</td>
-</tr>
-<tr class="odd">
-<td>I3</td>
-<td>XXX</td>
-<td>XXX</td>
+<td>Hovering over the various data points on both the map and line plots reveals only basic tooltips. Users are unable to get further meaningful information or context to drill further into.</td>
+<td>Add graphs embedded into the tooltips when hovering over the various datapoints.</td>
 </tr>
 </tbody>
 </table>
-<h1 id="section-b">2.0 Section B</h1>
-<p>Suggest alternative data visualisation and interactive techniques to improve the current design.</p>
-<h1 id="section-c">3.0 Section C</h1>
+<h1 id="the-proposed-visualization">2.0 - The proposed visualization</h1>
+<p>Suggest alternative data visualization and interactive techniques to improve the current design.</p>
+<p>The original dataset can be found here: <a href="https://acleddata.com/#/dashboard" class="uri">https://acleddata.com/#/dashboard</a></p>
+<center>
+<figure>
+<img src="E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/XXX" style="width:100.0%" alt="Draft of proposed design" /><figcaption aria-hidden="true">Draft of proposed design</figcaption>
+</figure>
+</center>
+<h1 id="the-final-visualization">3.0 - The final visualization</h1>
 <p>Using Tableau, design the proposed data visualization.</p>
-<h1 id="section-d">4.0 Section D</h1>
+<h1 id="steps-to-create-the-visualization">4.0 - Steps to create the visualization</h1>
 <p>Provide step-by-step description on how the data visualization was prepared.</p>
-<h1 id="section-e">5.0 Section E</h1>
+<h3 id="part-1-preparing-the-data-and-fields-required">Part 1: Preparing the data and fields required</h3>
+<ul>
+<li><p>Drag the source data .csv file into tableau to import it in.</p></li>
+<li><p>Create a parameter: Conflict Impact Type. This will allow us to toggle between showing Events, or Fatalities as data points on the visualizations.</p></li>
+</ul>
+<center>
+<figure>
+<img src="create_parameter.jpg" style="width:100.0%" alt="Create parameter: Conflict Impact Type" /><figcaption aria-hidden="true">Create parameter: Conflict Impact Type</figcaption>
+</figure>
+</center>
+<ul>
+<li><p>Create calculated field: Event Count. This has a fixed value of 1.</p></li>
+<li><p>Create calculated field: Selected Impact Type. This allows us to use it in conjunction with the previously created parameter.</p></li>
+</ul>
+<center>
+<figure>
+<img src="CF_selected_impact_type.jpg" style="width:100.0%" alt="Create calculated field: Selected Impact Type" /><figcaption aria-hidden="true">Create calculated field: Selected Impact Type</figcaption>
+</figure>
+</center>
+<ul>
+<li>Create calculated field: Number of Calendar Days. This provides us with the number of calendar days in the chosen number of years.</li>
+</ul>
+<center>
+<figure>
+<img src="CF_numberof_calendar_days.jpg" style="width:100.0%" alt="Create calculated field: Number of Calendar Days" /><figcaption aria-hidden="true">Create calculated field: Number of Calendar Days</figcaption>
+</figure>
+</center>
+<ul>
+<li></li>
+</ul>
+<h1 id="insights-revealed">5.0 - Insights revealed</h1>
 <p>Describe five major observations revealed by the data visualization prepared.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
