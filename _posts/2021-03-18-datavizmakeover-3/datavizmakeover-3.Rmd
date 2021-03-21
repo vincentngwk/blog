@@ -61,7 +61,7 @@ The original dataset can be found here: https://acleddata.com/#/dashboard
 
 <center>
 
-![Draft of proposed design](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/XXX){width=100%}
+![Draft of proposed design](E:/vincentngwk/blog/_posts/2021-03-18-datavizmakeover-3/proposed_draft_drawing.jpg){width=50%}
 
 </center>
 
