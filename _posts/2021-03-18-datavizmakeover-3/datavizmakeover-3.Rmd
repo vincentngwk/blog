@@ -336,29 +336,54 @@ Provide step-by-step description on how the data visualization was prepared.
 # 5.0 - Insights revealed
 Describe five major observations revealed by the data visualization prepared.
 
-  + Insight 1:
+### 5.1 - Insight 1: Philippines, Myanmar, Thailand were the 'deadliest' places during the period of 2015-2020.
   
-  XXX
-
-
-  + Insight 2:
+  We can see the following Key Statistics from the dashboard.
+  1) Philippines: 12,905 people killed out of 11,092 events, which occurred over 94% of the period of 2015-2020. 
+  2) Myanmar: 5,292 people killed out of 7,277 events, which occurred over 88% of the period of 2015-2020. 
+  3) Thailand: 887 people killed out of 3,321 events, which occurred over 62% of the period of 2015-2020.
   
-  XXX
-
-
-  + Insight 3:
+  Philippines and Myanmar seemed to be under conflict almost during the entire period.
   
-  XXX
-
-
-  + Insight 4:
+  Looking at all 3 countries selected together, the period under conflict increases to 96%.
   
-  XXX
-
-
-  + Insight 5:
+  Furthermore, almost all of the fatalities (19,078 out of 19,084) were due to '2-sided' events (events with 2 actors). 
   
-  XXX
+  
+
+### 5.2 - Insight 2: The greatest contributors to Fatalities were Violence against Civilians, and Battles.
+  
+  18,845 out of 19,883 (95%) of the fatalities across all countries in the period were due to Violence against Civilians and Battles. In addition, these were mainly due to events where they were 2 actors present. 
+
+
+### 5.3 - Insight 3: Although Thailand was the 3rd 'deadliest' place in the period, Indonesia had significantly more events. 
+  
+  The following are statistics for the various countries. We can see that while Indonesia had significantly more events per day compared to Thailand (2.3/day vs 1.5/day), Thailand had a higher fatality rate (both per event and per day). 
+    
+  - Cambodia -     26%, 0.4 events/day, 51 killed, 0.0 killed/day
+  - Indonesia -    68%, 2.3 events/day, 682 killed, 0.3 killed/day
+  - Laos -         2%, 0.0 events/day, 21 killed, 0.0 killed/day
+  - Malaysia -     31%, 0.4 events/day, 26 killed, 0.0 killed/day
+  - Myanmar -      88%, 3.3 events/day, 5,292 killed, 2.4 killed/day
+  - Philippines -  94%, 6.1 events/day, 12,905 killed, 7.1 killed/day
+  - Thailand -     62%, 1.5 events/day, 887 killed, 0.4 killed/day
+  - Vietnam -      13%, 0.2 events/day, 19 killed, 0.0 killed/day
+
+  It would seem that Indonesia has many protests, but relatively, they are not as deadly.
+
+
+### 5.4 - Insight 4: The 3 safest places in the region are: Laos, Vietnam, and Cambodia.
+
+  Laos, Vietnam, and Cambodia are all relatively near each other on the map. During the period, these 3 countries had the lowest event rates and fatalities rate (as seen in Insight 3). In addition, the fatalities have also been trending downwards in general across the period.
+
+
+### 5.5 - Insight 5: Philippines was a major contributor to the fatalities, and this only happened relatively recently.
+  
+  2016 saw a huge spike in the number of Fatalities in Violence against Civilians, which was due to Philippines.
+  
+  Since then, Philippines has been a major contributor to these fatalities. However, towards 2019 and 2020, the overall trend of fatalities seems to be decreasing. This was true for both the top 3 'deadliest' countries, and for all countries under analysis.
+  
+  It is also interesting to note that prior to 2016, there was no data captured for Philippines. It would be interesting to look into the prior years and see if Philippines had always been a deadly place in the region prior to the recent few years. 
 
 
 
